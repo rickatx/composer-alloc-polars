@@ -1,0 +1,21 @@
+# Rust
+/target/
+**/*.rs.bk
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyd
+.venv/
+.mypy_cache/
+.pytest_cache/
+
+# Build artifacts
+*.so
+*.dylib
+*.dll
+/composer_alloc_polars/*.so
+/composer_alloc_polars/__pycache__/
+
+# OS
+.DS_Store

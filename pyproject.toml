@@ -1,0 +1,14 @@
+[build-system]
+requires = ["maturin>=1.5,<2"]
+build-backend = "maturin"
+
+[project]
+name = "composer-alloc-polars"
+version = "0.1.0"
+requires-python = ">=3.13"
+dependencies = ["polars>=1.36.1"]
+
+[tool.maturin]
+bindings = "pyo3"
+module-name = "composer_alloc_polars._lib"
+features = ["pyo3/extension-module"]
