@@ -7,8 +7,17 @@ name = "composer-alloc-polars"
 version = "0.1.0"
 requires-python = ">=3.13"
 dependencies = ["polars>=1.36.1"]
+readme = "README.md"
+license = { file = "LICENSE" }
+classifiers = ["License :: OSI Approved :: MIT License"]
 
 [tool.maturin]
 bindings = "pyo3"
 module-name = "composer_alloc_polars._lib"
 features = ["pyo3/extension-module"]
+
+[tool.cibuildwheel]
+build = "cp313-*"
+skip = "pp*"
+manylinux-x86_64 = "manylinux2014"
+manylinux-aarch64 = "manylinux2014"
