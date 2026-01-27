@@ -19,5 +19,5 @@ features = ["pyo3/extension-module"]
 [tool.cibuildwheel]
 build = "cp313-*"
 skip = "pp*"
-manylinux-x86_64 = "manylinux2014"
-manylinux-aarch64 = "manylinux2014"
+manylinux-x86_64-image = "manylinux2014"
+manylinux-aarch64-image = "manylinux2014"
