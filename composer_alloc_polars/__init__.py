@@ -28,15 +28,6 @@ def _has_symbol(symbol: str) -> bool:
 HAS_ROLLING_MAX_DRAWDOWN = _has_symbol("_polars_plugin_field_rolling_max_drawdown")
 
 
-def add_one(expr: pl.Expr) -> pl.Expr:
-    return register_plugin_function(
-        plugin_path=_LIB,
-        function_name="add_one",
-        args=[expr],
-        is_elementwise=True,
-    )
-
-
 def filter_select_weights(*score_exprs: pl.Expr, n: int, reverse: bool) -> pl.Expr:
     if not score_exprs:
         raise ValueError("filter_select_weights requires at least one score expression")
@@ -50,6 +41,7 @@ def filter_select_weights(*score_exprs: pl.Expr, n: int, reverse: bool) -> pl.Ex
         ],
         is_elementwise=True,
     )
+
 
 def rolling_max_drawdown(expr: pl.Expr, window: int) -> pl.Expr:
     if not HAS_ROLLING_MAX_DRAWDOWN:
@@ -66,7 +58,6 @@ def rolling_max_drawdown(expr: pl.Expr, window: int) -> pl.Expr:
 
 __all__ = [
     "HAS_ROLLING_MAX_DRAWDOWN",
-    "add_one",
     "filter_select_weights",
     "rolling_max_drawdown",
 ]

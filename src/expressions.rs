@@ -1,12 +1,6 @@
 use polars::prelude::*;
 use pyo3_polars::derive::polars_expr;
 
-#[polars_expr(output_type=Int64)]
-pub fn add_one(inputs: &[Series]) -> PolarsResult<Series> {
-    let s = inputs[0].i64()?;
-    Ok((s + 1).into_series())
-}
-
 fn filter_weights_output(input_fields: &[Field]) -> PolarsResult<Field> {
     let _ = input_fields;
     Ok(Field::new(
