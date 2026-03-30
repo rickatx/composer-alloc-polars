@@ -20,6 +20,11 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.13"
+      - name: Set up QEMU
+        if: runner.os == 'Linux' && runner.arch == 'X64'
+        uses: docker/setup-qemu-action@v3
+        with:
+          platforms: arm64
       - run: pip install maturin cibuildwheel
       - run: cibuildwheel --output-dir dist
       - uses: actions/upload-artifact@v4
