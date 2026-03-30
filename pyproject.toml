@@ -4,7 +4,7 @@ build-backend = "maturin"
 
 [project]
 name = "composer-alloc-polars"
-version = "0.1.1"
+version = "0.1.2"
 requires-python = ">=3.13"
 dependencies = ["polars>=1.36.1"]
 readme = "README.md"
@@ -26,3 +26,6 @@ build = "cp313-* cp314-*"
 skip = "pp*"
 manylinux-x86_64-image = "manylinux2014"
 manylinux-aarch64-image = "manylinux2014"
+
+[tool.cibuildwheel.linux]
+archs = ["auto", "aarch64"]
