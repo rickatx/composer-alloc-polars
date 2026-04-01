@@ -23,7 +23,7 @@ features = ["pyo3/extension-module"]
 
 [tool.cibuildwheel]
 build = "cp313-* cp314-*"
-skip = "pp*"
+skip = "pp* *-musllinux_*"
 manylinux-x86_64-image = "manylinux2014"
 manylinux-aarch64-image = "manylinux2014"
 
