@@ -1,6 +1,6 @@
 [package]
 name = "composer_alloc_polars"
-version = "0.1.0"
+version = "0.2.0"
 edition = "2021"
 
 [lib]
@@ -8,6 +8,6 @@ name = "composer_alloc_polars"
 crate-type = ["cdylib"]
 
 [dependencies]
-pyo3 = { version = "0.26", features = ["extension-module"] }
+pyo3 = { version = "0.26" }
 pyo3-polars = { version = "0.25.0", features = ["derive"] }
-polars = "0.52.0"
+polars = { version = "0.52.0", features = ["dtype-struct"] }

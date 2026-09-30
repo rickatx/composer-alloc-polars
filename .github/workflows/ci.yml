@@ -1,0 +1,25 @@
+# Push and pull request checks: run Rust tests, build/install the wheel, then test its Python API.
+name: test
+
+on:
+  push:
+    branches: ["**"]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      - uses: dtolnay/rust-toolchain@stable
+      - run: cargo test --locked
+      - run: python -m pip install maturin pytest
+      - run: maturin build --release --interpreter python
+      - run: python -m pip install target/wheels/*.whl
+      - name: Python integration tests against installed wheel
+        run: |
+          cd /tmp
+          python -m pytest -q --import-mode=importlib "$GITHUB_WORKSPACE/tests"
