@@ -1,0 +1,4093 @@
+{
+  "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.35",
+  "python": "3.13.9",
+  "polars": "1.44.2",
+  "composer_alloc_polars": "0.2.0",
+  "polars_talib": "0.2.0",
+  "period": 14,
+  "cargo_lock_sha256": "cfed1b80342cb5837074df2a6810ffdf450b7124bc26601a7633bc1fa90a3d21",
+  "peak_process_rss_bytes": 165031936,
+  "note": "Collection timings use one numeric output per expression. The new plugin's Struct is projected to its value field; inputs are built before timing. For prefix and provenance-invalid cases, the new plugin receives finite values with a false mask and polars-talib receives nulls. Numeric-invalid cases pass null/NaN/Inf to both APIs; the new plugin's provenance mask stays true for those rows.",
+  "results": [
+    {
+      "rows": 100,
+      "input_case": "all_valid",
+      "implementation": "composer_alloc_polars",
+      "indicator": "ema",
+      "execution": "eager",
+      "median_ms": 0.4757040005642921,
+      "min_ms": 0.3475809935480356,
+      "max_ms": 0.5254989955574274,
+      "samples_ms": [
+        0.4332730022724718,
+        0.4757040005642921,
+        0.5254989955574274,
+        0.4956960037816316,
+        0.3475809935480356
+      ]
+    },
+    {
+      "rows": 100,
+      "input_case": "all_valid",
+      "implementation": "composer_alloc_polars",
+      "indicator": "ema",
+      "execution": "lazy",
+      "median_ms": 0.5492449854500592,
+      "min_ms": 0.4692629736382514,
+      "max_ms": 0.6248120043892413,
+      "samples_ms": [
+        0.5492449854500592,
+        0.6068229849915951,
+        0.6248120043892413,
+        0.5126250034663826,
+        0.4692629736382514
+      ]
+    },
+    {
+      "rows": 100,
+      "input_case": "all_valid",
+      "implementation": "composer_alloc_polars",
+      "indicator": "rsi",
+      "execution": "eager",
+      "median_ms": 0.48537098336964846,
+      "min_ms": 0.40601700311526656,
+      "max_ms": 0.5144680035300553,
+      "samples_ms": [
+        0.5144680035300553,
+        0.5062429991085082,
+        0.48537098336964846,
+        0.48415001947432756,
+        0.40601700311526656
+      ]
+    },
+    {
+      "rows": 100,
+      "input_case": "all_valid",
+      "implementation": "composer_alloc_polars",
+      "indicator": "rsi",
+      "execution": "lazy",
+      "median_ms": 0.4107610147912055,
+      "min_ms": 0.3529110108502209,
+      "max_ms": 0.5070229817647487,
+      "samples_ms": [
+        0.5070229817647487,
+        0.3529110108502209,
+        0.48407100257463753,
+        0.37594500463455915,
+        0.4107610147912055
+      ]
+    },
+    {
+      "rows": 100,
+      "input_case": "all_valid",
+      "implementation": "polars-talib",
+      "indicator": "ema",
+      "execution": "eager",
+      "median_ms": 0.15384299331344664,
+      "min_ms": 0.09705399861559272,
+      "max_ms": 0.20114201470278203,
+      "samples_ms": [
+        0.1715569815132767,
+        0.09705399861559272,
+        0.15384299331344664,
+        0.10213401401415467,
+        0.20114201470278203
+      ]
+    },
+    {
+      "rows": 100,
+      "input_case": "all_valid",
+      "implementation": "polars-talib",
+      "indicator": "ema",
+      "execution": "lazy",
+      "median_ms": 0.1334340195171535,
+      "min_ms": 0.11781399371102452,
+      "max_ms": 0.16926898388192058,
+      "samples_ms": [
+        0.13177000801078975,
+        0.11781399371102452,
+        0.16926898388192058,
+        0.13976599439047277,
+        0.1334340195171535
+      ]
+    },
+    {
+      "rows": 100,
+      "input_case": "all_valid",
+      "implementation": "polars-talib",
+      "indicator": "rsi",
+      "execution": "eager",
+      "median_ms": 0.11381699005141854,
+      "min_ms": 0.10281498543918133,
+      "max_ms": 0.3021649899892509,
+      "samples_ms": [
+        0.10368699440732598,
+        0.11381699005141854,
+        0.15084599726833403,
+        0.3021649899892509,
+        0.10281498543918133
+      ]
+    },
+    {
+      "rows": 100,
+      "input_case": "all_valid",
+      "implementation": "polars-talib",
+      "indicator": "rsi",
+      "execution": "lazy",
+      "median_ms": 0.12822399730794132,
+      "min_ms": 0.1206599990837276,
+      "max_ms": 0.17024300177581608,
+      "samples_ms": [
+        0.1206599990837276,
+        0.12419599806889892,
+        0.17024300177581608,
+        0.12822399730794132,
+        0.1331630046479404
+      ]
+    },
+    {
+      "rows": 100,
+      "input_case": "prefix_provenance",
+      "implementation": "composer_alloc_polars",
+      "indicator": "ema",
+      "execution": "eager",
+      "median_ms": 0.37535399314947426,
+      "min_ms": 0.36032998468726873,
+      "max_ms": 0.5387490091379732,
+      "samples_ms": [
+        0.36632700357586145,
+        0.37535399314947426,
+        0.5387490091379732,
+        0.4949510039296001,
+        0.36032998468726873
+      ]
+    },
+    {
+      "rows": 100,
+      "input_case": "prefix_provenance",
+      "implementation": "composer_alloc_polars",
+      "indicator": "ema",
+      "execution": "lazy",
+      "median_ms": 0.3841560101136565,
+      "min_ms": 0.3805230080615729,
+      "max_ms": 0.4566179995890707,
+      "samples_ms": [
+        0.3869660140480846,
+        0.3805230080615729,
+        0.3830770147033036,
+        0.4566179995890707,
+        0.3841560101136565
+      ]
+    },
+    {
+      "rows": 100,
+      "input_case": "prefix_provenance",
+      "implementation": "composer_alloc_polars",
+      "indicator": "rsi",
+      "execution": "eager",
+      "median_ms": 0.4241259885020554,
+      "min_ms": 0.395698007196188,
+      "max_ms": 0.492061983095482,
+      "samples_ms": [
+        0.4241259885020554,
+        0.395698007196188,
+        0.492061983095482,
+        0.4013130092062056,
+        0.47545399866066873
+      ]
+    },
+    {
+      "rows": 100,
+      "input_case": "prefix_provenance",
+      "implementation": "composer_alloc_polars",
+      "indicator": "rsi",
+      "execution": "lazy",
+      "median_ms": 0.3826269821729511,
+      "min_ms": 0.35626700264401734,
+      "max_ms": 0.5325019883457571,
+      "samples_ms": [
+        0.5325019883457571,
+        0.4320759908296168,
+        0.3826269821729511,
+        0.35626700264401734,
+        0.3717469808179885
+      ]
+    },
+    {
+      "rows": 100,
+      "input_case": "prefix_provenance",
+      "implementation": "polars-talib",
+      "indicator": "ema",
+      "execution": "eager",
+      "median_ms": 0.1465379900764674,
+      "min_ms": 0.13563799438998103,
+      "max_ms": 0.21186299272812903,
+      "samples_ms": [
+        0.21186299272812903,
+        0.1465379900764674,
+        0.15738900401629508,
+        0.13563799438998103,
+        0.14450500020757318
+      ]
+    },
+    {
+      "rows": 100,
+      "input_case": "prefix_provenance",
+      "implementation": "polars-talib",
+      "indicator": "ema",
+      "execution": "lazy",
+      "median_ms": 0.13392401160672307,
+      "min_ms": 0.12494699331000447,
+      "max_ms": 0.14193999231792986,
+      "samples_ms": [
+        0.14193999231792986,
+        0.12602898641489446,
+        0.13623898848891258,
+        0.12494699331000447,
+        0.13392401160672307
+      ]
+    },
+    {
+      "rows": 100,
+      "input_case": "prefix_provenance",
+      "implementation": "polars-talib",
+      "indicator": "rsi",
+      "execution": "eager",
+      "median_ms": 0.10939798085018992,
+      "min_ms": 0.10545001714490354,
+      "max_ms": 0.12367501039989293,
+      "samples_ms": [
+        0.10939798085018992,
+        0.11294399155303836,
+        0.10613200720399618,
+        0.12367501039989293,
+        0.10545001714490354
+      ]
+    },
+    {
+      "rows": 100,
+      "input_case": "prefix_provenance",
+      "implementation": "polars-talib",
+      "indicator": "rsi",
+      "execution": "lazy",
+      "median_ms": 0.12641999637708068,
+      "min_ms": 0.12555901776067913,
+      "max_ms": 0.16767901252023876,
+      "samples_ms": [
+        0.12555901776067913,
+        0.12641999637708068,
+        0.12558899470604956,
+        0.1419300097040832,
+        0.16767901252023876
+      ]
+    },
+    {
+      "rows": 100,
+      "input_case": "poison_provenance",
+      "implementation": "composer_alloc_polars",
+      "indicator": "ema",
+      "execution": "eager",
+      "median_ms": 0.4640920087695122,
+      "min_ms": 0.4384139901958406,
+      "max_ms": 0.6466940103564411,
+      "samples_ms": [
+        0.4384139901958406,
+        0.5171879893168807,
+        0.6466940103564411,
+        0.4562139802146703,
+        0.4640920087695122
+      ]
+    },
+    {
+      "rows": 100,
+      "input_case": "poison_provenance",
+      "implementation": "composer_alloc_polars",
+      "indicator": "ema",
+      "execution": "lazy",
+      "median_ms": 0.49766601296141744,
+      "min_ms": 0.3619359922595322,
+      "max_ms": 0.6559210014529526,
+      "samples_ms": [
+        0.41378699825145304,
+        0.6559210014529526,
+        0.5764260131400079,
+        0.3619359922595322,
+        0.49766601296141744
+      ]
+    },
+    {
+      "rows": 100,
+      "input_case": "poison_provenance",
+      "implementation": "composer_alloc_polars",
+      "indicator": "rsi",
+      "execution": "eager",
+      "median_ms": 0.48466099542565644,
+      "min_ms": 0.3582010103855282,
+      "max_ms": 0.4882439970970154,
+      "samples_ms": [
+        0.3582010103855282,
+        0.48466099542565644,
+        0.4882439970970154,
+        0.45659998431801796,
+        0.4881979839410633
+      ]
+    },
+    {
+      "rows": 100,
+      "input_case": "poison_provenance",
+      "implementation": "composer_alloc_polars",
+      "indicator": "rsi",
+      "execution": "lazy",
+      "median_ms": 0.4179450043011457,
+      "min_ms": 0.34723401768133044,
+      "max_ms": 0.519416993483901,
+      "samples_ms": [
+        0.519416993483901,
+        0.4179450043011457,
+        0.46323001151904464,
+        0.34723401768133044,
+        0.3522800107020885
+      ]
+    },
+    {
+      "rows": 100,
+      "input_case": "poison_provenance",
+      "implementation": "polars-talib",
+      "indicator": "ema",
+      "execution": "eager",
+      "median_ms": 0.13665997539646924,
+      "min_ms": 0.09847700130194426,
+      "max_ms": 0.18537198775447905,
+      "samples_ms": [
+        0.15626699314452708,
+        0.09942898759618402,
+        0.18537198775447905,
+        0.09847700130194426,
+        0.13665997539646924
+      ]
+    },
+    {
+      "rows": 100,
+      "input_case": "poison_provenance",
+      "implementation": "polars-talib",
+      "indicator": "ema",
+      "execution": "lazy",
+      "median_ms": 0.12427597539499402,
+      "min_ms": 0.11863600229844451,
+      "max_ms": 0.1379320165142417,
+      "samples_ms": [
+        0.1379320165142417,
+        0.11889598681591451,
+        0.12427597539499402,
+        0.11863600229844451,
+        0.12835400411859155
+      ]
+    },
+    {
+      "rows": 100,
+      "input_case": "poison_provenance",
+      "implementation": "polars-talib",
+      "indicator": "rsi",
+      "execution": "eager",
+      "median_ms": 0.10245500016026199,
+      "min_ms": 0.0982870114967227,
+      "max_ms": 0.11462799739092588,
+      "samples_ms": [
+        0.10665299487300217,
+        0.10245500016026199,
+        0.10114299948327243,
+        0.11462799739092588,
+        0.0982870114967227
+      ]
+    },
+    {
+      "rows": 100,
+      "input_case": "poison_provenance",
+      "implementation": "polars-talib",
+      "indicator": "rsi",
+      "execution": "lazy",
+      "median_ms": 0.13408501399680972,
+      "min_ms": 0.11767397518269718,
+      "max_ms": 0.22249299217946827,
+      "samples_ms": [
+        0.16173699987120926,
+        0.13408501399680972,
+        0.22249299217946827,
+        0.13138999929651618,
+        0.11767397518269718
+      ]
+    },
+    {
+      "rows": 100,
+      "input_case": "poison_null",
+      "implementation": "composer_alloc_polars",
+      "indicator": "ema",
+      "execution": "eager",
+      "median_ms": 0.42127000051550567,
+      "min_ms": 0.38473200402222574,
+      "max_ms": 0.5217379948589951,
+      "samples_ms": [
+        0.38473200402222574,
+        0.5217379948589951,
+        0.42127000051550567,
+        0.4144580161664635,
+        0.4440940101630986
+      ]
+    },
+    {
+      "rows": 100,
+      "input_case": "poison_null",
+      "implementation": "composer_alloc_polars",
+      "indicator": "ema",
+      "execution": "lazy",
+      "median_ms": 0.3748119925148785,
+      "min_ms": 0.33672398421913385,
+      "max_ms": 0.5116320098750293,
+      "samples_ms": [
+        0.3748119925148785,
+        0.33672398421913385,
+        0.36611000541597605,
+        0.5116320098750293,
+        0.5114320083521307
+      ]
+    },
+    {
+      "rows": 100,
+      "input_case": "poison_null",
+      "implementation": "composer_alloc_polars",
+      "indicator": "rsi",
+      "execution": "eager",
+      "median_ms": 0.44624798465520144,
+      "min_ms": 0.381465011741966,
+      "max_ms": 0.46616201871074736,
+      "samples_ms": [
+        0.45125800534151495,
+        0.44624798465520144,
+        0.46616201871074736,
+        0.381465011741966,
+        0.41331499232910573
+      ]
+    },
+    {
+      "rows": 100,
+      "input_case": "poison_null",
+      "implementation": "composer_alloc_polars",
+      "indicator": "rsi",
+      "execution": "lazy",
+      "median_ms": 0.3531620022840798,
+      "min_ms": 0.3446660120971501,
+      "max_ms": 0.37383101880550385,
+      "samples_ms": [
+        0.3446660120971501,
+        0.3531620022840798,
+        0.3480520099401474,
+        0.37383101880550385,
+        0.36953200469724834
+      ]
+    },
+    {
+      "rows": 100,
+      "input_case": "poison_null",
+      "implementation": "polars-talib",
+      "indicator": "ema",
+      "execution": "eager",
+      "median_ms": 0.13397401198744774,
+      "min_ms": 0.09603297803550959,
+      "max_ms": 0.16619599773548543,
+      "samples_ms": [
+        0.13397401198744774,
+        0.1265399914700538,
+        0.16619599773548543,
+        0.09603297803550959,
+        0.1470800198148936
+      ]
+    },
+    {
+      "rows": 100,
+      "input_case": "poison_null",
+      "implementation": "polars-talib",
+      "indicator": "ema",
+      "execution": "lazy",
+      "median_ms": 0.12564798817038536,
+      "min_ms": 0.11345601524226367,
+      "max_ms": 0.1731289958115667,
+      "samples_ms": [
+        0.12538800365291536,
+        0.1731289958115667,
+        0.13267199392430484,
+        0.11345601524226367,
+        0.12564798817038536
+      ]
+    },
+    {
+      "rows": 100,
+      "input_case": "poison_null",
+      "implementation": "polars-talib",
+      "indicator": "rsi",
+      "execution": "eager",
+      "median_ms": 0.10040099732577801,
+      "min_ms": 0.09461998706683517,
+      "max_ms": 0.10327599011361599,
+      "samples_ms": [
+        0.1007610117085278,
+        0.10023100185208023,
+        0.10327599011361599,
+        0.09461998706683517,
+        0.10040099732577801
+      ]
+    },
+    {
+      "rows": 100,
+      "input_case": "poison_null",
+      "implementation": "polars-talib",
+      "indicator": "rsi",
+      "execution": "lazy",
+      "median_ms": 0.11731300037354231,
+      "min_ms": 0.11562000145204365,
+      "max_ms": 0.16701797721907496,
+      "samples_ms": [
+        0.12747201253660023,
+        0.16701797721907496,
+        0.1166319998446852,
+        0.11731300037354231,
+        0.11562000145204365
+      ]
+    },
+    {
+      "rows": 100,
+      "input_case": "poison_nan",
+      "implementation": "composer_alloc_polars",
+      "indicator": "ema",
+      "execution": "eager",
+      "median_ms": 0.41929702274501324,
+      "min_ms": 0.39548700442537665,
+      "max_ms": 0.46812399523332715,
+      "samples_ms": [
+        0.41929702274501324,
+        0.39548700442537665,
+        0.40671799797564745,
+        0.46812399523332715,
+        0.4479729977902025
+      ]
+    },
+    {
+      "rows": 100,
+      "input_case": "poison_nan",
+      "implementation": "composer_alloc_polars",
+      "indicator": "ema",
+      "execution": "lazy",
+      "median_ms": 0.49193098675459623,
+      "min_ms": 0.3760049876291305,
+      "max_ms": 0.5046149890404195,
+      "samples_ms": [
+        0.4725879989564419,
+        0.5015039932914078,
+        0.3760049876291305,
+        0.49193098675459623,
+        0.5046149890404195
+      ]
+    },
+    {
+      "rows": 100,
+      "input_case": "poison_nan",
+      "implementation": "composer_alloc_polars",
+      "indicator": "rsi",
+      "execution": "eager",
+      "median_ms": 0.4564409900922328,
+      "min_ms": 0.330087001202628,
+      "max_ms": 0.47701699077151716,
+      "samples_ms": [
+        0.330087001202628,
+        0.3407780022826046,
+        0.4623789864126593,
+        0.4564409900922328,
+        0.47701699077151716
+      ]
+    },
+    {
+      "rows": 100,
+      "input_case": "poison_nan",
+      "implementation": "composer_alloc_polars",
+      "indicator": "rsi",
+      "execution": "lazy",
+      "median_ms": 0.4217220121063292,
+      "min_ms": 0.3613969893194735,
+      "max_ms": 0.5097200046293437,
+      "samples_ms": [
+        0.39385902346111834,
+        0.4217220121063292,
+        0.5097200046293437,
+        0.4841999907512218,
+        0.3613969893194735
+      ]
+    },
+    {
+      "rows": 100,
+      "input_case": "poison_nan",
+      "implementation": "polars-talib",
+      "indicator": "ema",
+      "execution": "eager",
+      "median_ms": 0.13355398550629616,
+      "min_ms": 0.0963729980867356,
+      "max_ms": 0.24009699700400233,
+      "samples_ms": [
+        0.13355398550629616,
+        0.09688502177596092,
+        0.13485600356943905,
+        0.0963729980867356,
+        0.24009699700400233
+      ]
+    },
+    {
+      "rows": 100,
+      "input_case": "poison_nan",
+      "implementation": "polars-talib",
+      "indicator": "ema",
+      "execution": "lazy",
+      "median_ms": 0.12933602556586266,
+      "min_ms": 0.11213298421353102,
+      "max_ms": 0.2208600053563714,
+      "samples_ms": [
+        0.2208600053563714,
+        0.11213298421353102,
+        0.12603000504896045,
+        0.1349469821434468,
+        0.12933602556586266
+      ]
+    },
+    {
+      "rows": 100,
+      "input_case": "poison_nan",
+      "implementation": "polars-talib",
+      "indicator": "rsi",
+      "execution": "eager",
+      "median_ms": 0.09970000246539712,
+      "min_ms": 0.09421899449080229,
+      "max_ms": 0.13964599929749966,
+      "samples_ms": [
+        0.11334498412907124,
+        0.09421899449080229,
+        0.09673400199972093,
+        0.13964599929749966,
+        0.09970000246539712
+      ]
+    },
+    {
+      "rows": 100,
+      "input_case": "poison_nan",
+      "implementation": "polars-talib",
+      "indicator": "rsi",
+      "execution": "lazy",
+      "median_ms": 0.11745301890186965,
+      "min_ms": 0.115308997919783,
+      "max_ms": 0.21633098367601633,
+      "samples_ms": [
+        0.12039899593219161,
+        0.11745301890186965,
+        0.11555998935364187,
+        0.115308997919783,
+        0.21633098367601633
+      ]
+    },
+    {
+      "rows": 100,
+      "input_case": "poison_inf",
+      "implementation": "composer_alloc_polars",
+      "indicator": "ema",
+      "execution": "eager",
+      "median_ms": 0.4729559877887368,
+      "min_ms": 0.3384480078238994,
+      "max_ms": 0.5738009931519628,
+      "samples_ms": [
+        0.3509670204948634,
+        0.4729559877887368,
+        0.5738009931519628,
+        0.48231700202450156,
+        0.3384480078238994
+      ]
+    },
+    {
+      "rows": 100,
+      "input_case": "poison_inf",
+      "implementation": "composer_alloc_polars",
+      "indicator": "ema",
+      "execution": "lazy",
+      "median_ms": 0.46560500049963593,
+      "min_ms": 0.3752129850909114,
+      "max_ms": 0.5007970030419528,
+      "samples_ms": [
+        0.3752129850909114,
+        0.4300319997128099,
+        0.46560500049963593,
+        0.5007970030419528,
+        0.47965699923224747
+      ]
+    },
+    {
+      "rows": 100,
+      "input_case": "poison_inf",
+      "implementation": "composer_alloc_polars",
+      "indicator": "rsi",
+      "execution": "eager",
+      "median_ms": 0.4606159927789122,
+      "min_ms": 0.44095300836488605,
+      "max_ms": 0.5626589991152287,
+      "samples_ms": [
+        0.4606159927789122,
+        0.5626589991152287,
+        0.44572699698619545,
+        0.5108620098326355,
+        0.44095300836488605
+      ]
+    },
+    {
+      "rows": 100,
+      "input_case": "poison_inf",
+      "implementation": "composer_alloc_polars",
+      "indicator": "rsi",
+      "execution": "lazy",
+      "median_ms": 0.4122740065213293,
+      "min_ms": 0.37218700163066387,
+      "max_ms": 0.4525030090007931,
+      "samples_ms": [
+        0.43463599286042154,
+        0.4122740065213293,
+        0.37218700163066387,
+        0.39547201595269144,
+        0.4525030090007931
+      ]
+    },
+    {
+      "rows": 100,
+      "input_case": "poison_inf",
+      "implementation": "polars-talib",
+      "indicator": "ema",
+      "execution": "eager",
+      "median_ms": 0.13664999278262258,
+      "min_ms": 0.09979901369661093,
+      "max_ms": 0.16669699107296765,
+      "samples_ms": [
+        0.15118802548386157,
+        0.09979901369661093,
+        0.16669699107296765,
+        0.11788500705733895,
+        0.13664999278262258
+      ]
+    },
+    {
+      "rows": 100,
+      "input_case": "poison_inf",
+      "implementation": "polars-talib",
+      "indicator": "ema",
+      "execution": "lazy",
+      "median_ms": 0.1262500009033829,
+      "min_ms": 0.11229299707338214,
+      "max_ms": 0.20887699793092906,
+      "samples_ms": [
+        0.20887699793092906,
+        0.11229299707338214,
+        0.1262500009033829,
+        0.1856320013757795,
+        0.12534900452010334
+      ]
+    },
+    {
+      "rows": 100,
+      "input_case": "poison_inf",
+      "implementation": "polars-talib",
+      "indicator": "rsi",
+      "execution": "eager",
+      "median_ms": 0.10032998397946358,
+      "min_ms": 0.09524097549729049,
+      "max_ms": 0.25769000058062375,
+      "samples_ms": [
+        0.1253380032721907,
+        0.09524097549729049,
+        0.10032998397946358,
+        0.09701400995254517,
+        0.25769000058062375
+      ]
+    },
+    {
+      "rows": 100,
+      "input_case": "poison_inf",
+      "implementation": "polars-talib",
+      "indicator": "rsi",
+      "execution": "lazy",
+      "median_ms": 0.1348659861832857,
+      "min_ms": 0.1183949934784323,
+      "max_ms": 0.14228001236915588,
+      "samples_ms": [
+        0.1348659861832857,
+        0.1393650018144399,
+        0.12900499859824777,
+        0.1183949934784323,
+        0.14228001236915588
+      ]
+    },
+    {
+      "rows": 1000,
+      "input_case": "all_valid",
+      "implementation": "composer_alloc_polars",
+      "indicator": "ema",
+      "execution": "eager",
+      "median_ms": 0.4527469864115119,
+      "min_ms": 0.358111021341756,
+      "max_ms": 0.48392900498583913,
+      "samples_ms": [
+        0.4527469864115119,
+        0.358111021341756,
+        0.44730398803949356,
+        0.46713798656128347,
+        0.48392900498583913
+      ]
+    },
+    {
+      "rows": 1000,
+      "input_case": "all_valid",
+      "implementation": "composer_alloc_polars",
+      "indicator": "ema",
+      "execution": "lazy",
+      "median_ms": 0.5007419968023896,
+      "min_ms": 0.42997399577870965,
+      "max_ms": 0.5145489994902164,
+      "samples_ms": [
+        0.5007419968023896,
+        0.46260899398475885,
+        0.42997399577870965,
+        0.5048000020906329,
+        0.5145489994902164
+      ]
+    },
+    {
+      "rows": 1000,
+      "input_case": "all_valid",
+      "implementation": "composer_alloc_polars",
+      "indicator": "rsi",
+      "execution": "eager",
+      "median_ms": 0.4350969975348562,
+      "min_ms": 0.3492239920888096,
+      "max_ms": 0.50481001380831,
+      "samples_ms": [
+        0.50481001380831,
+        0.40214500040747225,
+        0.4350969975348562,
+        0.3492239920888096,
+        0.4709049826487899
+      ]
+    },
+    {
+      "rows": 1000,
+      "input_case": "all_valid",
+      "implementation": "composer_alloc_polars",
+      "indicator": "rsi",
+      "execution": "lazy",
+      "median_ms": 0.3885379992425442,
+      "min_ms": 0.3736710059456527,
+      "max_ms": 0.5359789938665926,
+      "samples_ms": [
+        0.5359789938665926,
+        0.3885379992425442,
+        0.4201789852231741,
+        0.3866640035994351,
+        0.3736710059456527
+      ]
+    },
+    {
+      "rows": 1000,
+      "input_case": "all_valid",
+      "implementation": "polars-talib",
+      "indicator": "ema",
+      "execution": "eager",
+      "median_ms": 0.14808200648985803,
+      "min_ms": 0.11363599332980812,
+      "max_ms": 0.23682101164013147,
+      "samples_ms": [
+        0.23682101164013147,
+        0.12190197594463825,
+        0.14808200648985803,
+        0.11363599332980812,
+        0.19758500275202096
+      ]
+    },
+    {
+      "rows": 1000,
+      "input_case": "all_valid",
+      "implementation": "polars-talib",
+      "indicator": "ema",
+      "execution": "lazy",
+      "median_ms": 0.1448150142095983,
+      "min_ms": 0.12646100367419422,
+      "max_ms": 0.1792109978850931,
+      "samples_ms": [
+        0.1792109978850931,
+        0.1448150142095983,
+        0.12646100367419422,
+        0.15468397759832442,
+        0.1345160126220435
+      ]
+    },
+    {
+      "rows": 1000,
+      "input_case": "all_valid",
+      "implementation": "polars-talib",
+      "indicator": "rsi",
+      "execution": "eager",
+      "median_ms": 0.1102800015360117,
+      "min_ms": 0.10048100375570357,
+      "max_ms": 0.13049799599684775,
+      "samples_ms": [
+        0.13049799599684775,
+        0.11415701010264456,
+        0.10322601883672178,
+        0.1102800015360117,
+        0.10048100375570357
+      ]
+    },
+    {
+      "rows": 1000,
+      "input_case": "all_valid",
+      "implementation": "polars-talib",
+      "indicator": "rsi",
+      "execution": "lazy",
+      "median_ms": 0.14234098489396274,
+      "min_ms": 0.1412479905411601,
+      "max_ms": 0.16945201787166297,
+      "samples_ms": [
+        0.14234098489396274,
+        0.14204002218320966,
+        0.15389200416393578,
+        0.16945201787166297,
+        0.1412479905411601
+      ]
+    },
+    {
+      "rows": 1000,
+      "input_case": "prefix_provenance",
+      "implementation": "composer_alloc_polars",
+      "indicator": "ema",
+      "execution": "eager",
+      "median_ms": 0.4335389821790159,
+      "min_ms": 0.3476860001683235,
+      "max_ms": 0.48426000284962356,
+      "samples_ms": [
+        0.3918949805665761,
+        0.4810350073967129,
+        0.48426000284962356,
+        0.3476860001683235,
+        0.4335389821790159
+      ]
+    },
+    {
+      "rows": 1000,
+      "input_case": "prefix_provenance",
+      "implementation": "composer_alloc_polars",
+      "indicator": "ema",
+      "execution": "lazy",
+      "median_ms": 0.38255698746070266,
+      "min_ms": 0.36740198265761137,
+      "max_ms": 0.5067280144430697,
+      "samples_ms": [
+        0.37778200930915773,
+        0.4030959971714765,
+        0.36740198265761137,
+        0.5067280144430697,
+        0.38255698746070266
+      ]
+    },
+    {
+      "rows": 1000,
+      "input_case": "prefix_provenance",
+      "implementation": "composer_alloc_polars",
+      "indicator": "rsi",
+      "execution": "eager",
+      "median_ms": 0.48231700202450156,
+      "min_ms": 0.4709410131908953,
+      "max_ms": 0.5139739951118827,
+      "samples_ms": [
+        0.49784299335442483,
+        0.5139739951118827,
+        0.4709410131908953,
+        0.471812003524974,
+        0.48231700202450156
+      ]
+    },
+    {
+      "rows": 1000,
+      "input_case": "prefix_provenance",
+      "implementation": "composer_alloc_polars",
+      "indicator": "rsi",
+      "execution": "lazy",
+      "median_ms": 0.485936994664371,
+      "min_ms": 0.38459099596366286,
+      "max_ms": 0.5429120210465044,
+      "samples_ms": [
+        0.5013129848521203,
+        0.485936994664371,
+        0.4417800228111446,
+        0.38459099596366286,
+        0.5429120210465044
+      ]
+    },
+    {
+      "rows": 1000,
+      "input_case": "prefix_provenance",
+      "implementation": "polars-talib",
+      "indicator": "ema",
+      "execution": "eager",
+      "median_ms": 0.14335301239043474,
+      "min_ms": 0.11202300083823502,
+      "max_ms": 0.15218998305499554,
+      "samples_ms": [
+        0.15014599193818867,
+        0.14335301239043474,
+        0.13978499919176102,
+        0.11202300083823502,
+        0.15218998305499554
+      ]
+    },
+    {
+      "rows": 1000,
+      "input_case": "prefix_provenance",
+      "implementation": "polars-talib",
+      "indicator": "ema",
+      "execution": "lazy",
+      "median_ms": 0.13262199354358017,
+      "min_ms": 0.12246298138052225,
+      "max_ms": 0.21933700190857053,
+      "samples_ms": [
+        0.13278299593366683,
+        0.21933700190857053,
+        0.13020701589994133,
+        0.12246298138052225,
+        0.13262199354358017
+      ]
+    },
+    {
+      "rows": 1000,
+      "input_case": "prefix_provenance",
+      "implementation": "polars-talib",
+      "indicator": "rsi",
+      "execution": "eager",
+      "median_ms": 0.10737398406490684,
+      "min_ms": 0.10484899394214153,
+      "max_ms": 0.1575089991092682,
+      "samples_ms": [
+        0.10781499440781772,
+        0.10520999785512686,
+        0.1575089991092682,
+        0.10484899394214153,
+        0.10737398406490684
+      ]
+    },
+    {
+      "rows": 1000,
+      "input_case": "prefix_provenance",
+      "implementation": "polars-talib",
+      "indicator": "rsi",
+      "execution": "lazy",
+      "median_ms": 0.14180000289343297,
+      "min_ms": 0.13130001025274396,
+      "max_ms": 0.18003300647251308,
+      "samples_ms": [
+        0.18003300647251308,
+        0.1314300170633942,
+        0.14835200272500515,
+        0.13130001025274396,
+        0.14180000289343297
+      ]
+    },
+    {
+      "rows": 1000,
+      "input_case": "poison_provenance",
+      "implementation": "composer_alloc_polars",
+      "indicator": "ema",
+      "execution": "eager",
+      "median_ms": 0.5395759944804013,
+      "min_ms": 0.4928070120513439,
+      "max_ms": 0.5725680093746632,
+      "samples_ms": [
+        0.5725680093746632,
+        0.5333939916454256,
+        0.4928070120513439,
+        0.5395860061980784,
+        0.5395759944804013
+      ]
+    },
+    {
+      "rows": 1000,
+      "input_case": "poison_provenance",
+      "implementation": "composer_alloc_polars",
+      "indicator": "ema",
+      "execution": "lazy",
+      "median_ms": 0.5343659722711891,
+      "min_ms": 0.50024499068968,
+      "max_ms": 0.5485730071086437,
+      "samples_ms": [
+        0.5027049919590354,
+        0.5485730071086437,
+        0.50024499068968,
+        0.535778992343694,
+        0.5343659722711891
+      ]
+    },
+    {
+      "rows": 1000,
+      "input_case": "poison_provenance",
+      "implementation": "composer_alloc_polars",
+      "indicator": "rsi",
+      "execution": "eager",
+      "median_ms": 0.5450860189739615,
+      "min_ms": 0.38028002018108964,
+      "max_ms": 0.7865849765948951,
+      "samples_ms": [
+        0.7865849765948951,
+        0.569413008634001,
+        0.38028002018108964,
+        0.5450860189739615,
+        0.40340700070373714
+      ]
+    },
+    {
+      "rows": 1000,
+      "input_case": "poison_provenance",
+      "implementation": "composer_alloc_polars",
+      "indicator": "rsi",
+      "execution": "lazy",
+      "median_ms": 0.575533980736509,
+      "min_ms": 0.432501983596012,
+      "max_ms": 0.6858390115667135,
+      "samples_ms": [
+        0.6858390115667135,
+        0.432501983596012,
+        0.5333029839675874,
+        0.6421309954021126,
+        0.575533980736509
+      ]
+    },
+    {
+      "rows": 1000,
+      "input_case": "poison_provenance",
+      "implementation": "polars-talib",
+      "indicator": "ema",
+      "execution": "eager",
+      "median_ms": 0.1876270107459277,
+      "min_ms": 0.11547000030986965,
+      "max_ms": 0.21291500888764858,
+      "samples_ms": [
+        0.21291500888764858,
+        0.15943299513310194,
+        0.1876270107459277,
+        0.11547000030986965,
+        0.1891590072773397
+      ]
+    },
+    {
+      "rows": 1000,
+      "input_case": "poison_provenance",
+      "implementation": "polars-talib",
+      "indicator": "ema",
+      "execution": "lazy",
+      "median_ms": 0.16430200776085258,
+      "min_ms": 0.1551950117573142,
+      "max_ms": 0.19395799608901143,
+      "samples_ms": [
+        0.16697699902579188,
+        0.1555659982841462,
+        0.1551950117573142,
+        0.16430200776085258,
+        0.19395799608901143
+      ]
+    },
+    {
+      "rows": 1000,
+      "input_case": "poison_provenance",
+      "implementation": "polars-talib",
+      "indicator": "rsi",
+      "execution": "eager",
+      "median_ms": 0.12453700765036047,
+      "min_ms": 0.11300499318167567,
+      "max_ms": 0.19780098227784038,
+      "samples_ms": [
+        0.12114999117329717,
+        0.19780098227784038,
+        0.11300499318167567,
+        0.17966199084185064,
+        0.12453700765036047
+      ]
+    },
+    {
+      "rows": 1000,
+      "input_case": "poison_provenance",
+      "implementation": "polars-talib",
+      "indicator": "rsi",
+      "execution": "lazy",
+      "median_ms": 0.13447500532492995,
+      "min_ms": 0.1298970018979162,
+      "max_ms": 0.20404800307005644,
+      "samples_ms": [
+        0.1298970018979162,
+        0.1317510032095015,
+        0.20404800307005644,
+        0.13447500532492995,
+        0.14024597476236522
+      ]
+    },
+    {
+      "rows": 1000,
+      "input_case": "poison_null",
+      "implementation": "composer_alloc_polars",
+      "indicator": "ema",
+      "execution": "eager",
+      "median_ms": 0.3890089865308255,
+      "min_ms": 0.37602498196065426,
+      "max_ms": 0.5089429905638099,
+      "samples_ms": [
+        0.3844000166282058,
+        0.3890089865308255,
+        0.5089429905638099,
+        0.44443499064072967,
+        0.37602498196065426
+      ]
+    },
+    {
+      "rows": 1000,
+      "input_case": "poison_null",
+      "implementation": "composer_alloc_polars",
+      "indicator": "ema",
+      "execution": "lazy",
+      "median_ms": 0.4431220004335046,
+      "min_ms": 0.4118529905099422,
+      "max_ms": 0.5693119892384857,
+      "samples_ms": [
+        0.4431220004335046,
+        0.563471025088802,
+        0.41478400817140937,
+        0.4118529905099422,
+        0.5693119892384857
+      ]
+    },
+    {
+      "rows": 1000,
+      "input_case": "poison_null",
+      "implementation": "composer_alloc_polars",
+      "indicator": "rsi",
+      "execution": "eager",
+      "median_ms": 0.46508401283062994,
+      "min_ms": 0.4063360102009028,
+      "max_ms": 0.5377869820222259,
+      "samples_ms": [
+        0.4063360102009028,
+        0.46508401283062994,
+        0.5377869820222259,
+        0.5325730016920716,
+        0.4453120054677129
+      ]
+    },
+    {
+      "rows": 1000,
+      "input_case": "poison_null",
+      "implementation": "composer_alloc_polars",
+      "indicator": "rsi",
+      "execution": "lazy",
+      "median_ms": 0.5355729954317212,
+      "min_ms": 0.4316910053603351,
+      "max_ms": 0.6394560041371733,
+      "samples_ms": [
+        0.5601320008281618,
+        0.6394560041371733,
+        0.4379370075184852,
+        0.4316910053603351,
+        0.5355729954317212
+      ]
+    },
+    {
+      "rows": 1000,
+      "input_case": "poison_null",
+      "implementation": "polars-talib",
+      "indicator": "ema",
+      "execution": "eager",
+      "median_ms": 0.17204700270667672,
+      "min_ms": 0.11526900925673544,
+      "max_ms": 0.2054510114248842,
+      "samples_ms": [
+        0.18118400475941598,
+        0.17204700270667672,
+        0.2054510114248842,
+        0.11526900925673544,
+        0.15322098624892533
+      ]
+    },
+    {
+      "rows": 1000,
+      "input_case": "poison_null",
+      "implementation": "polars-talib",
+      "indicator": "ema",
+      "execution": "lazy",
+      "median_ms": 0.14808200648985803,
+      "min_ms": 0.1419000036548823,
+      "max_ms": 0.21487800404429436,
+      "samples_ms": [
+        0.1419000036548823,
+        0.21138100419193506,
+        0.21487800404429436,
+        0.14808200648985803,
+        0.1468090049456805
+      ]
+    },
+    {
+      "rows": 1000,
+      "input_case": "poison_null",
+      "implementation": "polars-talib",
+      "indicator": "rsi",
+      "execution": "eager",
+      "median_ms": 0.11952698696404696,
+      "min_ms": 0.10643299901857972,
+      "max_ms": 0.16899200272746384,
+      "samples_ms": [
+        0.11952698696404696,
+        0.10643299901857972,
+        0.1362189941573888,
+        0.16899200272746384,
+        0.11645202175714076
+      ]
+    },
+    {
+      "rows": 1000,
+      "input_case": "poison_null",
+      "implementation": "polars-talib",
+      "indicator": "rsi",
+      "execution": "lazy",
+      "median_ms": 0.13447599485516548,
+      "min_ms": 0.13196098734624684,
+      "max_ms": 0.1839489850681275,
+      "samples_ms": [
+        0.1336239802185446,
+        0.13196098734624684,
+        0.15434299712069333,
+        0.1839489850681275,
+        0.13447599485516548
+      ]
+    },
+    {
+      "rows": 1000,
+      "input_case": "poison_nan",
+      "implementation": "composer_alloc_polars",
+      "indicator": "ema",
+      "execution": "eager",
+      "median_ms": 0.3857649862766266,
+      "min_ms": 0.3820309939328581,
+      "max_ms": 0.532230013050139,
+      "samples_ms": [
+        0.3854519745800644,
+        0.532230013050139,
+        0.3857649862766266,
+        0.41313000838272274,
+        0.3820309939328581
+      ]
+    },
+    {
+      "rows": 1000,
+      "input_case": "poison_nan",
+      "implementation": "composer_alloc_polars",
+      "indicator": "ema",
+      "execution": "lazy",
+      "median_ms": 0.4139720113016665,
+      "min_ms": 0.39182501495815814,
+      "max_ms": 0.541313987923786,
+      "samples_ms": [
+        0.4067170084454119,
+        0.541313987923786,
+        0.39182501495815814,
+        0.42096502147614956,
+        0.4139720113016665
+      ]
+    },
+    {
+      "rows": 1000,
+      "input_case": "poison_nan",
+      "implementation": "composer_alloc_polars",
+      "indicator": "rsi",
+      "execution": "eager",
+      "median_ms": 0.5350870196707547,
+      "min_ms": 0.4089779977221042,
+      "max_ms": 0.717045011697337,
+      "samples_ms": [
+        0.717045011697337,
+        0.5350870196707547,
+        0.5511620256584138,
+        0.4123350081499666,
+        0.4089779977221042
+      ]
+    },
+    {
+      "rows": 1000,
+      "input_case": "poison_nan",
+      "implementation": "composer_alloc_polars",
+      "indicator": "rsi",
+      "execution": "lazy",
+      "median_ms": 0.4245069867465645,
+      "min_ms": 0.4179149982519448,
+      "max_ms": 0.45347202103585005,
+      "samples_ms": [
+        0.4239710106048733,
+        0.45347202103585005,
+        0.4245069867465645,
+        0.4255679959896952,
+        0.4179149982519448
+      ]
+    },
+    {
+      "rows": 1000,
+      "input_case": "poison_nan",
+      "implementation": "polars-talib",
+      "indicator": "ema",
+      "execution": "eager",
+      "median_ms": 0.16525399405509233,
+      "min_ms": 0.10958799975924194,
+      "max_ms": 0.1932379964273423,
+      "samples_ms": [
+        0.16731800860725343,
+        0.11018899385817349,
+        0.1932379964273423,
+        0.10958799975924194,
+        0.16525399405509233
+      ]
+    },
+    {
+      "rows": 1000,
+      "input_case": "poison_nan",
+      "implementation": "polars-talib",
+      "indicator": "ema",
+      "execution": "lazy",
+      "median_ms": 0.14700001338496804,
+      "min_ms": 0.1313889806624502,
+      "max_ms": 0.17093500355258584,
+      "samples_ms": [
+        0.14700001338496804,
+        0.1313889806624502,
+        0.17093500355258584,
+        0.15039599384181201,
+        0.13813201803714037
+      ]
+    },
+    {
+      "rows": 1000,
+      "input_case": "poison_nan",
+      "implementation": "polars-talib",
+      "indicator": "rsi",
+      "execution": "eager",
+      "median_ms": 0.1190470065921545,
+      "min_ms": 0.11182299931533635,
+      "max_ms": 0.203005998628214,
+      "samples_ms": [
+        0.20048097940161824,
+        0.11250301031395793,
+        0.1190470065921545,
+        0.203005998628214,
+        0.11182299931533635
+      ]
+    },
+    {
+      "rows": 1000,
+      "input_case": "poison_nan",
+      "implementation": "polars-talib",
+      "indicator": "rsi",
+      "execution": "lazy",
+      "median_ms": 0.13995598419569433,
+      "min_ms": 0.1302179880440235,
+      "max_ms": 0.20763499196618795,
+      "samples_ms": [
+        0.16899098409339786,
+        0.13995598419569433,
+        0.20763499196618795,
+        0.1346660137642175,
+        0.1302179880440235
+      ]
+    },
+    {
+      "rows": 1000,
+      "input_case": "poison_inf",
+      "implementation": "composer_alloc_polars",
+      "indicator": "ema",
+      "execution": "eager",
+      "median_ms": 0.47103501856327057,
+      "min_ms": 0.37292399792931974,
+      "max_ms": 0.5661059985868633,
+      "samples_ms": [
+        0.5661059985868633,
+        0.47103501856327057,
+        0.38653999217785895,
+        0.5260149773675948,
+        0.37292399792931974
+      ]
+    },
+    {
+      "rows": 1000,
+      "input_case": "poison_inf",
+      "implementation": "composer_alloc_polars",
+      "indicator": "ema",
+      "execution": "lazy",
+      "median_ms": 0.5029969906900078,
+      "min_ms": 0.37032400723546743,
+      "max_ms": 0.5883480189368129,
+      "samples_ms": [
+        0.5470209871418774,
+        0.5883480189368129,
+        0.4018989857286215,
+        0.5029969906900078,
+        0.37032400723546743
+      ]
+    },
+    {
+      "rows": 1000,
+      "input_case": "poison_inf",
+      "implementation": "composer_alloc_polars",
+      "indicator": "rsi",
+      "execution": "eager",
+      "median_ms": 0.4958320059813559,
+      "min_ms": 0.3977089945692569,
+      "max_ms": 0.6379080004990101,
+      "samples_ms": [
+        0.3977089945692569,
+        0.6379080004990101,
+        0.5060519906692207,
+        0.4958320059813559,
+        0.49485001363791525
+      ]
+    },
+    {
+      "rows": 1000,
+      "input_case": "poison_inf",
+      "implementation": "composer_alloc_polars",
+      "indicator": "rsi",
+      "execution": "lazy",
+      "median_ms": 0.4372260009404272,
+      "min_ms": 0.39644702337682247,
+      "max_ms": 0.47289900248870254,
+      "samples_ms": [
+        0.41576699004508555,
+        0.4372260009404272,
+        0.39644702337682247,
+        0.4702310252469033,
+        0.47289900248870254
+      ]
+    },
+    {
+      "rows": 1000,
+      "input_case": "poison_inf",
+      "implementation": "polars-talib",
+      "indicator": "ema",
+      "execution": "eager",
+      "median_ms": 0.15409299521706998,
+      "min_ms": 0.09893800597637892,
+      "max_ms": 0.20473901531659067,
+      "samples_ms": [
+        0.20473901531659067,
+        0.10905700037255883,
+        0.17802801448851824,
+        0.09893800597637892,
+        0.15409299521706998
+      ]
+    },
+    {
+      "rows": 1000,
+      "input_case": "poison_inf",
+      "implementation": "polars-talib",
+      "indicator": "ema",
+      "execution": "lazy",
+      "median_ms": 0.1342659816145897,
+      "min_ms": 0.12650000280700624,
+      "max_ms": 0.16888100071810186,
+      "samples_ms": [
+        0.16449301620014012,
+        0.16888100071810186,
+        0.1342659816145897,
+        0.12650000280700624,
+        0.1308889768552035
+      ]
+    },
+    {
+      "rows": 1000,
+      "input_case": "poison_inf",
+      "implementation": "polars-talib",
+      "indicator": "rsi",
+      "execution": "eager",
+      "median_ms": 0.12070900993421674,
+      "min_ms": 0.10888700489886105,
+      "max_ms": 0.20788502297364175,
+      "samples_ms": [
+        0.12070900993421674,
+        0.10888700489886105,
+        0.11178298154845834,
+        0.1760440063662827,
+        0.20788502297364175
+      ]
+    },
+    {
+      "rows": 1000,
+      "input_case": "poison_inf",
+      "implementation": "polars-talib",
+      "indicator": "rsi",
+      "execution": "lazy",
+      "median_ms": 0.13165001291781664,
+      "min_ms": 0.1220119884237647,
+      "max_ms": 0.1503160165157169,
+      "samples_ms": [
+        0.13165001291781664,
+        0.1503160165157169,
+        0.1220119884237647,
+        0.12236199108883739,
+        0.1455669989809394
+      ]
+    },
+    {
+      "rows": 10000,
+      "input_case": "all_valid",
+      "implementation": "composer_alloc_polars",
+      "indicator": "ema",
+      "execution": "eager",
+      "median_ms": 0.6337749946396798,
+      "min_ms": 0.5182249878998846,
+      "max_ms": 0.7925370009616017,
+      "samples_ms": [
+        0.5732900172006339,
+        0.6337749946396798,
+        0.5182249878998846,
+        0.7925370009616017,
+        0.6508579826913774
+      ]
+    },
+    {
+      "rows": 10000,
+      "input_case": "all_valid",
+      "implementation": "composer_alloc_polars",
+      "indicator": "ema",
+      "execution": "lazy",
+      "median_ms": 0.568370014661923,
+      "min_ms": 0.5133649974595755,
+      "max_ms": 0.7104749965947121,
+      "samples_ms": [
+        0.7104749965947121,
+        0.568370014661923,
+        0.5486530135385692,
+        0.5133649974595755,
+        0.6095489952713251
+      ]
+    },
+    {
+      "rows": 10000,
+      "input_case": "all_valid",
+      "implementation": "composer_alloc_polars",
+      "indicator": "rsi",
+      "execution": "eager",
+      "median_ms": 0.5734199949074537,
+      "min_ms": 0.5466800066642463,
+      "max_ms": 0.6655949982814491,
+      "samples_ms": [
+        0.5966039898339659,
+        0.5499960097949952,
+        0.6655949982814491,
+        0.5466800066642463,
+        0.5734199949074537
+      ]
+    },
+    {
+      "rows": 10000,
+      "input_case": "all_valid",
+      "implementation": "composer_alloc_polars",
+      "indicator": "rsi",
+      "execution": "lazy",
+      "median_ms": 0.6136060110293329,
+      "min_ms": 0.5514580116141587,
+      "max_ms": 0.7876770105212927,
+      "samples_ms": [
+        0.6820760027039796,
+        0.7876770105212927,
+        0.6136060110293329,
+        0.5612770037259907,
+        0.5514580116141587
+      ]
+    },
+    {
+      "rows": 10000,
+      "input_case": "all_valid",
+      "implementation": "polars-talib",
+      "indicator": "ema",
+      "execution": "eager",
+      "median_ms": 0.16752802184782922,
+      "min_ms": 0.12296298518776894,
+      "max_ms": 0.20781499915756285,
+      "samples_ms": [
+        0.20756400772370398,
+        0.12442699517123401,
+        0.20781499915756285,
+        0.12296298518776894,
+        0.16752802184782922
+      ]
+    },
+    {
+      "rows": 10000,
+      "input_case": "all_valid",
+      "implementation": "polars-talib",
+      "indicator": "ema",
+      "execution": "lazy",
+      "median_ms": 0.15775900101289153,
+      "min_ms": 0.14267099322751164,
+      "max_ms": 0.1735800178721547,
+      "samples_ms": [
+        0.1583609846420586,
+        0.14267099322751164,
+        0.1735800178721547,
+        0.15775900101289153,
+        0.1558660005684942
+      ]
+    },
+    {
+      "rows": 10000,
+      "input_case": "all_valid",
+      "implementation": "polars-talib",
+      "indicator": "rsi",
+      "execution": "eager",
+      "median_ms": 0.1399570028297603,
+      "min_ms": 0.13585799024440348,
+      "max_ms": 0.20592199871316552,
+      "samples_ms": [
+        0.1409579999744892,
+        0.1380419998895377,
+        0.20592199871316552,
+        0.13585799024440348,
+        0.1399570028297603
+      ]
+    },
+    {
+      "rows": 10000,
+      "input_case": "all_valid",
+      "implementation": "polars-talib",
+      "indicator": "rsi",
+      "execution": "lazy",
+      "median_ms": 0.16270999913103878,
+      "min_ms": 0.15300099039450288,
+      "max_ms": 0.1942100061569363,
+      "samples_ms": [
+        0.15300099039450288,
+        0.18914902466349304,
+        0.1942100061569363,
+        0.16270999913103878,
+        0.15562601038254797
+      ]
+    },
+    {
+      "rows": 10000,
+      "input_case": "prefix_provenance",
+      "implementation": "composer_alloc_polars",
+      "indicator": "ema",
+      "execution": "eager",
+      "median_ms": 0.5593529785983264,
+      "min_ms": 0.5199080042075366,
+      "max_ms": 0.6755840149708092,
+      "samples_ms": [
+        0.5199080042075366,
+        0.6582509959116578,
+        0.5211459938436747,
+        0.5593529785983264,
+        0.6755840149708092
+      ]
+    },
+    {
+      "rows": 10000,
+      "input_case": "prefix_provenance",
+      "implementation": "composer_alloc_polars",
+      "indicator": "ema",
+      "execution": "lazy",
+      "median_ms": 0.6527910009026527,
+      "min_ms": 0.5223430052865297,
+      "max_ms": 0.7382030016742647,
+      "samples_ms": [
+        0.7382030016742647,
+        0.5223430052865297,
+        0.5509729962795973,
+        0.6527910009026527,
+        0.6850920035503805
+      ]
+    },
+    {
+      "rows": 10000,
+      "input_case": "prefix_provenance",
+      "implementation": "composer_alloc_polars",
+      "indicator": "rsi",
+      "execution": "eager",
+      "median_ms": 0.6030119839124382,
+      "min_ms": 0.5550950008910149,
+      "max_ms": 0.8449169981759042,
+      "samples_ms": [
+        0.6030119839124382,
+        0.573369994526729,
+        0.6966539949644357,
+        0.8449169981759042,
+        0.5550950008910149
+      ]
+    },
+    {
+      "rows": 10000,
+      "input_case": "prefix_provenance",
+      "implementation": "composer_alloc_polars",
+      "indicator": "rsi",
+      "execution": "lazy",
+      "median_ms": 0.6132560083642602,
+      "min_ms": 0.5610769730992615,
+      "max_ms": 0.7924569945316762,
+      "samples_ms": [
+        0.5696179869119078,
+        0.5610769730992615,
+        0.6132560083642602,
+        0.7924569945316762,
+        0.6606460083276033
+      ]
+    },
+    {
+      "rows": 10000,
+      "input_case": "prefix_provenance",
+      "implementation": "polars-talib",
+      "indicator": "ema",
+      "execution": "eager",
+      "median_ms": 0.1689509954303503,
+      "min_ms": 0.1268410123884678,
+      "max_ms": 0.26216800324618816,
+      "samples_ms": [
+        0.1689509954303503,
+        0.1268410123884678,
+        0.26216800324618816,
+        0.14997500693425536,
+        0.22143099340610206
+      ]
+    },
+    {
+      "rows": 10000,
+      "input_case": "prefix_provenance",
+      "implementation": "polars-talib",
+      "indicator": "ema",
+      "execution": "lazy",
+      "median_ms": 0.19436900038272142,
+      "min_ms": 0.15944300685077906,
+      "max_ms": 0.2224129857495427,
+      "samples_ms": [
+        0.16887098900042474,
+        0.15944300685077906,
+        0.19436900038272142,
+        0.2224129857495427,
+        0.21575999562628567
+      ]
+    },
+    {
+      "rows": 10000,
+      "input_case": "prefix_provenance",
+      "implementation": "polars-talib",
+      "indicator": "rsi",
+      "execution": "eager",
+      "median_ms": 0.15344101120717824,
+      "min_ms": 0.13608799781650305,
+      "max_ms": 0.2052409981843084,
+      "samples_ms": [
+        0.15077699208632112,
+        0.13608799781650305,
+        0.15344101120717824,
+        0.2052409981843084,
+        0.15763999545015395
+      ]
+    },
+    {
+      "rows": 10000,
+      "input_case": "prefix_provenance",
+      "implementation": "polars-talib",
+      "indicator": "rsi",
+      "execution": "lazy",
+      "median_ms": 0.16667699674144387,
+      "min_ms": 0.15942301251925528,
+      "max_ms": 0.17501201364211738,
+      "samples_ms": [
+        0.16086502000689507,
+        0.15942301251925528,
+        0.16667699674144387,
+        0.17501201364211738,
+        0.1702639856375754
+      ]
+    },
+    {
+      "rows": 10000,
+      "input_case": "poison_provenance",
+      "implementation": "composer_alloc_polars",
+      "indicator": "ema",
+      "execution": "eager",
+      "median_ms": 0.5129599885549396,
+      "min_ms": 0.484439980937168,
+      "max_ms": 0.6370210030581802,
+      "samples_ms": [
+        0.484439980937168,
+        0.5075840163044631,
+        0.5689209792762995,
+        0.5129599885549396,
+        0.6370210030581802
+      ]
+    },
+    {
+      "rows": 10000,
+      "input_case": "poison_provenance",
+      "implementation": "composer_alloc_polars",
+      "indicator": "ema",
+      "execution": "lazy",
+      "median_ms": 0.5442450055852532,
+      "min_ms": 0.5271369882393628,
+      "max_ms": 0.6220819777809083,
+      "samples_ms": [
+        0.6220819777809083,
+        0.5442450055852532,
+        0.5279139732010663,
+        0.5271369882393628,
+        0.5496140220202506
+      ]
+    },
+    {
+      "rows": 10000,
+      "input_case": "poison_provenance",
+      "implementation": "composer_alloc_polars",
+      "indicator": "rsi",
+      "execution": "eager",
+      "median_ms": 0.5884889978915453,
+      "min_ms": 0.567462993785739,
+      "max_ms": 0.726230995496735,
+      "samples_ms": [
+        0.5884889978915453,
+        0.567462993785739,
+        0.6712359900120646,
+        0.5768660048488528,
+        0.726230995496735
+      ]
+    },
+    {
+      "rows": 10000,
+      "input_case": "poison_provenance",
+      "implementation": "composer_alloc_polars",
+      "indicator": "rsi",
+      "execution": "lazy",
+      "median_ms": 0.6665319961030036,
+      "min_ms": 0.5785249813925475,
+      "max_ms": 0.781270005973056,
+      "samples_ms": [
+        0.5998300039209425,
+        0.6665319961030036,
+        0.5785249813925475,
+        0.781270005973056,
+        0.7170230092015117
+      ]
+    },
+    {
+      "rows": 10000,
+      "input_case": "poison_provenance",
+      "implementation": "polars-talib",
+      "indicator": "ema",
+      "execution": "eager",
+      "median_ms": 0.1756040146574378,
+      "min_ms": 0.140977994306013,
+      "max_ms": 0.23191102081909776,
+      "samples_ms": [
+        0.1756040146574378,
+        0.140977994306013,
+        0.2103700244333595,
+        0.15281100058928132,
+        0.23191102081909776
+      ]
+    },
+    {
+      "rows": 10000,
+      "input_case": "poison_provenance",
+      "implementation": "polars-talib",
+      "indicator": "ema",
+      "execution": "lazy",
+      "median_ms": 0.17081398982554674,
+      "min_ms": 0.15505502233281732,
+      "max_ms": 0.17495299107395113,
+      "samples_ms": [
+        0.17081398982554674,
+        0.17249799566343427,
+        0.17013298929668963,
+        0.15505502233281732,
+        0.17495299107395113
+      ]
+    },
+    {
+      "rows": 10000,
+      "input_case": "poison_provenance",
+      "implementation": "polars-talib",
+      "indicator": "rsi",
+      "execution": "eager",
+      "median_ms": 0.15408301260322332,
+      "min_ms": 0.14487601583823562,
+      "max_ms": 0.1857129973359406,
+      "samples_ms": [
+        0.14767100219614804,
+        0.17327899695374072,
+        0.1857129973359406,
+        0.14487601583823562,
+        0.15408301260322332
+      ]
+    },
+    {
+      "rows": 10000,
+      "input_case": "poison_provenance",
+      "implementation": "polars-talib",
+      "indicator": "rsi",
+      "execution": "lazy",
+      "median_ms": 0.1841400226112455,
+      "min_ms": 0.16791900270618498,
+      "max_ms": 0.252330006333068,
+      "samples_ms": [
+        0.21384700085036457,
+        0.252330006333068,
+        0.1841400226112455,
+        0.16978298663161695,
+        0.16791900270618498
+      ]
+    },
+    {
+      "rows": 10000,
+      "input_case": "poison_null",
+      "implementation": "composer_alloc_polars",
+      "indicator": "ema",
+      "execution": "eager",
+      "median_ms": 0.5993899831082672,
+      "min_ms": 0.5312400171533227,
+      "max_ms": 0.7013590075075626,
+      "samples_ms": [
+        0.5993899831082672,
+        0.7013590075075626,
+        0.6088110094424337,
+        0.5312400171533227,
+        0.5649839877150953
+      ]
+    },
+    {
+      "rows": 10000,
+      "input_case": "poison_null",
+      "implementation": "composer_alloc_polars",
+      "indicator": "ema",
+      "execution": "lazy",
+      "median_ms": 0.6555329891853034,
+      "min_ms": 0.5864880222361535,
+      "max_ms": 0.7815150020178407,
+      "samples_ms": [
+        0.7499360071960837,
+        0.5864880222361535,
+        0.6312810000963509,
+        0.6555329891853034,
+        0.7815150020178407
+      ]
+    },
+    {
+      "rows": 10000,
+      "input_case": "poison_null",
+      "implementation": "composer_alloc_polars",
+      "indicator": "rsi",
+      "execution": "eager",
+      "median_ms": 0.6469099898822606,
+      "min_ms": 0.5832819733768702,
+      "max_ms": 0.8658059814479202,
+      "samples_ms": [
+        0.6193980225361884,
+        0.6469099898822606,
+        0.693504000082612,
+        0.5832819733768702,
+        0.8658059814479202
+      ]
+    },
+    {
+      "rows": 10000,
+      "input_case": "poison_null",
+      "implementation": "composer_alloc_polars",
+      "indicator": "rsi",
+      "execution": "lazy",
+      "median_ms": 0.6304229900706559,
+      "min_ms": 0.6153339927550405,
+      "max_ms": 0.9380340052302927,
+      "samples_ms": [
+        0.6277239881455898,
+        0.9380340052302927,
+        0.6153339927550405,
+        0.9079900046344846,
+        0.6304229900706559
+      ]
+    },
+    {
+      "rows": 10000,
+      "input_case": "poison_null",
+      "implementation": "polars-talib",
+      "indicator": "ema",
+      "execution": "eager",
+      "median_ms": 0.23361400235444307,
+      "min_ms": 0.137691997224465,
+      "max_ms": 0.24839199613779783,
+      "samples_ms": [
+        0.23361400235444307,
+        0.20423802197910845,
+        0.23594798403792083,
+        0.137691997224465,
+        0.24839199613779783
+      ]
+    },
+    {
+      "rows": 10000,
+      "input_case": "poison_null",
+      "implementation": "polars-talib",
+      "indicator": "ema",
+      "execution": "lazy",
+      "median_ms": 0.1769459922797978,
+      "min_ms": 0.16213799244724214,
+      "max_ms": 0.17999199917539954,
+      "samples_ms": [
+        0.17999199917539954,
+        0.16213799244724214,
+        0.1788090157788247,
+        0.16393099213019013,
+        0.1769459922797978
+      ]
+    },
+    {
+      "rows": 10000,
+      "input_case": "poison_null",
+      "implementation": "polars-talib",
+      "indicator": "rsi",
+      "execution": "eager",
+      "median_ms": 0.16110599972307682,
+      "min_ms": 0.15014500240795314,
+      "max_ms": 0.2366199914831668,
+      "samples_ms": [
+        0.2366199914831668,
+        0.15014500240795314,
+        0.16110599972307682,
+        0.16316998517140746,
+        0.1564880076330155
+      ]
+    },
+    {
+      "rows": 10000,
+      "input_case": "poison_null",
+      "implementation": "polars-talib",
+      "indicator": "rsi",
+      "execution": "lazy",
+      "median_ms": 0.17670600209385157,
+      "min_ms": 0.1701239962130785,
+      "max_ms": 0.19486001110635698,
+      "samples_ms": [
+        0.1899210037663579,
+        0.17670600209385157,
+        0.1756630081217736,
+        0.19486001110635698,
+        0.1701239962130785
+      ]
+    },
+    {
+      "rows": 10000,
+      "input_case": "poison_nan",
+      "implementation": "composer_alloc_polars",
+      "indicator": "ema",
+      "execution": "eager",
+      "median_ms": 0.5546649917960167,
+      "min_ms": 0.5123590235598385,
+      "max_ms": 0.6348470051307231,
+      "samples_ms": [
+        0.5133810045663267,
+        0.5123590235598385,
+        0.6348470051307231,
+        0.6018140120431781,
+        0.5546649917960167
+      ]
+    },
+    {
+      "rows": 10000,
+      "input_case": "poison_nan",
+      "implementation": "composer_alloc_polars",
+      "indicator": "ema",
+      "execution": "lazy",
+      "median_ms": 0.6325369758997113,
+      "min_ms": 0.4964639956597239,
+      "max_ms": 0.7109810248948634,
+      "samples_ms": [
+        0.4964639956597239,
+        0.5371109873522073,
+        0.6325369758997113,
+        0.6502160103991628,
+        0.7109810248948634
+      ]
+    },
+    {
+      "rows": 10000,
+      "input_case": "poison_nan",
+      "implementation": "composer_alloc_polars",
+      "indicator": "rsi",
+      "execution": "eager",
+      "median_ms": 0.6236549816094339,
+      "min_ms": 0.6128149980213493,
+      "max_ms": 0.7028370164334774,
+      "samples_ms": [
+        0.6183559889905155,
+        0.6516779831144959,
+        0.6128149980213493,
+        0.7028370164334774,
+        0.6236549816094339
+      ]
+    },
+    {
+      "rows": 10000,
+      "input_case": "poison_nan",
+      "implementation": "composer_alloc_polars",
+      "indicator": "rsi",
+      "execution": "lazy",
+      "median_ms": 0.5981869762763381,
+      "min_ms": 0.5188710056245327,
+      "max_ms": 0.7790059898979962,
+      "samples_ms": [
+        0.5188710056245327,
+        0.7790059898979962,
+        0.5827269924338907,
+        0.5981869762763381,
+        0.6064369808882475
+      ]
+    },
+    {
+      "rows": 10000,
+      "input_case": "poison_nan",
+      "implementation": "polars-talib",
+      "indicator": "ema",
+      "execution": "eager",
+      "median_ms": 0.16441300977021456,
+      "min_ms": 0.12928599608130753,
+      "max_ms": 0.22977701155468822,
+      "samples_ms": [
+        0.16441300977021456,
+        0.14304200885817409,
+        0.22977701155468822,
+        0.12928599608130753,
+        0.20706301438622177
+      ]
+    },
+    {
+      "rows": 10000,
+      "input_case": "poison_nan",
+      "implementation": "polars-talib",
+      "indicator": "ema",
+      "execution": "lazy",
+      "median_ms": 0.19532101578079164,
+      "min_ms": 0.15020600403659046,
+      "max_ms": 0.265925977146253,
+      "samples_ms": [
+        0.15705800615251064,
+        0.19532101578079164,
+        0.265925977146253,
+        0.15020600403659046,
+        0.21789400489069521
+      ]
+    },
+    {
+      "rows": 10000,
+      "input_case": "poison_nan",
+      "implementation": "polars-talib",
+      "indicator": "rsi",
+      "execution": "eager",
+      "median_ms": 0.1624890137463808,
+      "min_ms": 0.13457599561661482,
+      "max_ms": 0.1729789946693927,
+      "samples_ms": [
+        0.1729789946693927,
+        0.13457599561661482,
+        0.16693701036274433,
+        0.14310202095657587,
+        0.1624890137463808
+      ]
+    },
+    {
+      "rows": 10000,
+      "input_case": "poison_nan",
+      "implementation": "polars-talib",
+      "indicator": "rsi",
+      "execution": "lazy",
+      "median_ms": 0.165194011060521,
+      "min_ms": 0.15845199231989682,
+      "max_ms": 0.17179700080305338,
+      "samples_ms": [
+        0.17179700080305338,
+        0.15845199231989682,
+        0.17024300177581608,
+        0.165194011060521,
+        0.16418201266787946
+      ]
+    },
+    {
+      "rows": 10000,
+      "input_case": "poison_inf",
+      "implementation": "composer_alloc_polars",
+      "indicator": "ema",
+      "execution": "eager",
+      "median_ms": 0.5973360093776137,
+      "min_ms": 0.5474110075738281,
+      "max_ms": 0.6881279987283051,
+      "samples_ms": [
+        0.5949659971520305,
+        0.6881279987283051,
+        0.6639660277869552,
+        0.5474110075738281,
+        0.5973360093776137
+      ]
+    },
+    {
+      "rows": 10000,
+      "input_case": "poison_inf",
+      "implementation": "composer_alloc_polars",
+      "indicator": "ema",
+      "execution": "lazy",
+      "median_ms": 0.5873330228496343,
+      "min_ms": 0.5518939869944006,
+      "max_ms": 0.646347994916141,
+      "samples_ms": [
+        0.6095339776948094,
+        0.5798519996460527,
+        0.5873330228496343,
+        0.646347994916141,
+        0.5518939869944006
+      ]
+    },
+    {
+      "rows": 10000,
+      "input_case": "poison_inf",
+      "implementation": "composer_alloc_polars",
+      "indicator": "rsi",
+      "execution": "eager",
+      "median_ms": 0.7027149840723723,
+      "min_ms": 0.6978810124564916,
+      "max_ms": 0.8910439792089164,
+      "samples_ms": [
+        0.742856995202601,
+        0.7021650089882314,
+        0.7027149840723723,
+        0.8910439792089164,
+        0.6978810124564916
+      ]
+    },
+    {
+      "rows": 10000,
+      "input_case": "poison_inf",
+      "implementation": "composer_alloc_polars",
+      "indicator": "rsi",
+      "execution": "lazy",
+      "median_ms": 0.6342160049825907,
+      "min_ms": 0.555846025235951,
+      "max_ms": 0.7537119963672012,
+      "samples_ms": [
+        0.7537119963672012,
+        0.6342160049825907,
+        0.6964950007386506,
+        0.5602749879471958,
+        0.555846025235951
+      ]
+    },
+    {
+      "rows": 10000,
+      "input_case": "poison_inf",
+      "implementation": "polars-talib",
+      "indicator": "ema",
+      "execution": "eager",
+      "median_ms": 0.1746920170262456,
+      "min_ms": 0.1467089750804007,
+      "max_ms": 0.2826779964379966,
+      "samples_ms": [
+        0.2826779964379966,
+        0.1467089750804007,
+        0.18427998293191195,
+        0.15449299826286733,
+        0.1746920170262456
+      ]
+    },
+    {
+      "rows": 10000,
+      "input_case": "poison_inf",
+      "implementation": "polars-talib",
+      "indicator": "ema",
+      "execution": "lazy",
+      "median_ms": 0.20305599900893867,
+      "min_ms": 0.17281799227930605,
+      "max_ms": 0.22427699877880514,
+      "samples_ms": [
+        0.19994998001493514,
+        0.20305599900893867,
+        0.17281799227930605,
+        0.21592102712020278,
+        0.22427699877880514
+      ]
+    },
+    {
+      "rows": 10000,
+      "input_case": "poison_inf",
+      "implementation": "polars-talib",
+      "indicator": "rsi",
+      "execution": "eager",
+      "median_ms": 0.15755000640638173,
+      "min_ms": 0.1424610090907663,
+      "max_ms": 0.17755801673047245,
+      "samples_ms": [
+        0.15755000640638173,
+        0.1424610090907663,
+        0.15233998419716954,
+        0.17755801673047245,
+        0.17036401550285518
+      ]
+    },
+    {
+      "rows": 10000,
+      "input_case": "poison_inf",
+      "implementation": "polars-talib",
+      "indicator": "rsi",
+      "execution": "lazy",
+      "median_ms": 0.18949000514112413,
+      "min_ms": 0.16685700393281877,
+      "max_ms": 0.26768899988383055,
+      "samples_ms": [
+        0.18949000514112413,
+        0.16685700393281877,
+        0.16830000095069408,
+        0.26768899988383055,
+        0.24519598810002208
+      ]
+    },
+    {
+      "rows": 100000,
+      "input_case": "all_valid",
+      "implementation": "composer_alloc_polars",
+      "indicator": "ema",
+      "execution": "eager",
+      "median_ms": 2.46906399843283,
+      "min_ms": 2.3680950107518584,
+      "max_ms": 2.7951639785896987,
+      "samples_ms": [
+        2.7951639785896987,
+        2.440619980916381,
+        2.46906399843283,
+        2.785144984954968,
+        2.3680950107518584
+      ]
+    },
+    {
+      "rows": 100000,
+      "input_case": "all_valid",
+      "implementation": "composer_alloc_polars",
+      "indicator": "ema",
+      "execution": "lazy",
+      "median_ms": 2.497073990525678,
+      "min_ms": 2.385896019404754,
+      "max_ms": 2.5676710065454245,
+      "samples_ms": [
+        2.5676710065454245,
+        2.5419029989279807,
+        2.385896019404754,
+        2.394642011495307,
+        2.497073990525678
+      ]
+    },
+    {
+      "rows": 100000,
+      "input_case": "all_valid",
+      "implementation": "composer_alloc_polars",
+      "indicator": "rsi",
+      "execution": "eager",
+      "median_ms": 2.804571995511651,
+      "min_ms": 2.663213002961129,
+      "max_ms": 3.0552179960068315,
+      "samples_ms": [
+        2.804571995511651,
+        3.0552179960068315,
+        2.928509988123551,
+        2.7543429750949144,
+        2.663213002961129
+      ]
+    },
+    {
+      "rows": 100000,
+      "input_case": "all_valid",
+      "implementation": "composer_alloc_polars",
+      "indicator": "rsi",
+      "execution": "lazy",
+      "median_ms": 2.839577995473519,
+      "min_ms": 2.805737021844834,
+      "max_ms": 3.3419899991713464,
+      "samples_ms": [
+        2.8240180108696222,
+        2.990684995893389,
+        3.3419899991713464,
+        2.805737021844834,
+        2.839577995473519
+      ]
+    },
+    {
+      "rows": 100000,
+      "input_case": "all_valid",
+      "implementation": "polars-talib",
+      "indicator": "ema",
+      "execution": "eager",
+      "median_ms": 0.48260699259117246,
+      "min_ms": 0.38214700180105865,
+      "max_ms": 0.6220529903657734,
+      "samples_ms": [
+        0.48260699259117246,
+        0.4758940194733441,
+        0.5115329986438155,
+        0.38214700180105865,
+        0.6220529903657734
+      ]
+    },
+    {
+      "rows": 100000,
+      "input_case": "all_valid",
+      "implementation": "polars-talib",
+      "indicator": "ema",
+      "execution": "lazy",
+      "median_ms": 0.4371310060378164,
+      "min_ms": 0.4188360180705786,
+      "max_ms": 0.47972198808565736,
+      "samples_ms": [
+        0.46889198711141944,
+        0.4188360180705786,
+        0.47972198808565736,
+        0.4216719826217741,
+        0.4371310060378164
+      ]
+    },
+    {
+      "rows": 100000,
+      "input_case": "all_valid",
+      "implementation": "polars-talib",
+      "indicator": "rsi",
+      "execution": "eager",
+      "median_ms": 0.5008319858461618,
+      "min_ms": 0.47190699842758477,
+      "max_ms": 0.5519389815162867,
+      "samples_ms": [
+        0.49198500346392393,
+        0.5084059957880527,
+        0.5519389815162867,
+        0.47190699842758477,
+        0.5008319858461618
+      ]
+    },
+    {
+      "rows": 100000,
+      "input_case": "all_valid",
+      "implementation": "polars-talib",
+      "indicator": "rsi",
+      "execution": "lazy",
+      "median_ms": 0.5005610000807792,
+      "min_ms": 0.4962029925081879,
+      "max_ms": 0.6176439928822219,
+      "samples_ms": [
+        0.4973459872417152,
+        0.4962029925081879,
+        0.6176439928822219,
+        0.5005610000807792,
+        0.5005919956602156
+      ]
+    },
+    {
+      "rows": 100000,
+      "input_case": "prefix_provenance",
+      "implementation": "composer_alloc_polars",
+      "indicator": "ema",
+      "execution": "eager",
+      "median_ms": 2.726676990278065,
+      "min_ms": 2.4966959899757057,
+      "max_ms": 3.01087400293909,
+      "samples_ms": [
+        2.4966959899757057,
+        2.726676990278065,
+        2.7885930030606687,
+        3.01087400293909,
+        2.67382399761118
+      ]
+    },
+    {
+      "rows": 100000,
+      "input_case": "prefix_provenance",
+      "implementation": "composer_alloc_polars",
+      "indicator": "ema",
+      "execution": "lazy",
+      "median_ms": 2.574849990196526,
+      "min_ms": 2.450900006806478,
+      "max_ms": 2.8895220020785928,
+      "samples_ms": [
+        2.470175997586921,
+        2.450900006806478,
+        2.574849990196526,
+        2.8895220020785928,
+        2.828806987963617
+      ]
+    },
+    {
+      "rows": 100000,
+      "input_case": "prefix_provenance",
+      "implementation": "composer_alloc_polars",
+      "indicator": "rsi",
+      "execution": "eager",
+      "median_ms": 2.9406009998638183,
+      "min_ms": 2.6865370164159685,
+      "max_ms": 3.3474340161774307,
+      "samples_ms": [
+        2.9406009998638183,
+        2.6865370164159685,
+        2.7589079982135445,
+        3.3474340161774307,
+        3.2020159997045994
+      ]
+    },
+    {
+      "rows": 100000,
+      "input_case": "prefix_provenance",
+      "implementation": "composer_alloc_polars",
+      "indicator": "rsi",
+      "execution": "lazy",
+      "median_ms": 3.0809780000708997,
+      "min_ms": 2.795320004224777,
+      "max_ms": 3.5108940210193396,
+      "samples_ms": [
+        3.5108940210193396,
+        2.7993510011583567,
+        2.795320004224777,
+        3.0809780000708997,
+        3.1973989971447736
+      ]
+    },
+    {
+      "rows": 100000,
+      "input_case": "prefix_provenance",
+      "implementation": "polars-talib",
+      "indicator": "ema",
+      "execution": "eager",
+      "median_ms": 0.6494240078609437,
+      "min_ms": 0.4223730065859854,
+      "max_ms": 0.7028859981801361,
+      "samples_ms": [
+        0.6494240078609437,
+        0.4223730065859854,
+        0.6624590023420751,
+        0.4913040029350668,
+        0.7028859981801361
+      ]
+    },
+    {
+      "rows": 100000,
+      "input_case": "prefix_provenance",
+      "implementation": "polars-talib",
+      "indicator": "ema",
+      "execution": "lazy",
+      "median_ms": 0.5136760009918362,
+      "min_ms": 0.4414489958435297,
+      "max_ms": 0.5579309945460409,
+      "samples_ms": [
+        0.5579309945460409,
+        0.4414489958435297,
+        0.5136760009918362,
+        0.49580298946239054,
+        0.53653001668863
+      ]
+    },
+    {
+      "rows": 100000,
+      "input_case": "prefix_provenance",
+      "implementation": "polars-talib",
+      "indicator": "rsi",
+      "execution": "eager",
+      "median_ms": 0.5523500149138272,
+      "min_ms": 0.5318410112522542,
+      "max_ms": 0.6802830030210316,
+      "samples_ms": [
+        0.6327920127660036,
+        0.6802830030210316,
+        0.5318410112522542,
+        0.5523500149138272,
+        0.5321420030668378
+      ]
+    },
+    {
+      "rows": 100000,
+      "input_case": "prefix_provenance",
+      "implementation": "polars-talib",
+      "indicator": "rsi",
+      "execution": "lazy",
+      "median_ms": 0.5537130055017769,
+      "min_ms": 0.5461090186145157,
+      "max_ms": 0.7484730158466846,
+      "samples_ms": [
+        0.5461090186145157,
+        0.5537130055017769,
+        0.5811640003230423,
+        0.7484730158466846,
+        0.5509180191438645
+      ]
+    },
+    {
+      "rows": 100000,
+      "input_case": "poison_provenance",
+      "implementation": "composer_alloc_polars",
+      "indicator": "ema",
+      "execution": "eager",
+      "median_ms": 2.496156987035647,
+      "min_ms": 2.0764420041814446,
+      "max_ms": 2.701810997677967,
+      "samples_ms": [
+        2.1626010129693896,
+        2.0764420041814446,
+        2.701810997677967,
+        2.496156987035647,
+        2.6956090005114675
+      ]
+    },
+    {
+      "rows": 100000,
+      "input_case": "poison_provenance",
+      "implementation": "composer_alloc_polars",
+      "indicator": "ema",
+      "execution": "lazy",
+      "median_ms": 2.3302189947571605,
+      "min_ms": 2.1310910233296454,
+      "max_ms": 2.6285609928891063,
+      "samples_ms": [
+        2.1310910233296454,
+        2.3179260024335235,
+        2.3302189947571605,
+        2.6285609928891063,
+        2.362350991461426
+      ]
+    },
+    {
+      "rows": 100000,
+      "input_case": "poison_provenance",
+      "implementation": "composer_alloc_polars",
+      "indicator": "rsi",
+      "execution": "eager",
+      "median_ms": 2.4839620164129883,
+      "min_ms": 2.244675997644663,
+      "max_ms": 3.9441919943783432,
+      "samples_ms": [
+        2.2995210019871593,
+        2.4839620164129883,
+        2.244675997644663,
+        3.9441919943783432,
+        2.4857859825715423
+      ]
+    },
+    {
+      "rows": 100000,
+      "input_case": "poison_provenance",
+      "implementation": "composer_alloc_polars",
+      "indicator": "rsi",
+      "execution": "lazy",
+      "median_ms": 2.38260900368914,
+      "min_ms": 2.3175109818112105,
+      "max_ms": 2.8284269792493433,
+      "samples_ms": [
+        2.38260900368914,
+        2.6129070029128343,
+        2.3175109818112105,
+        2.3484340053983033,
+        2.8284269792493433
+      ]
+    },
+    {
+      "rows": 100000,
+      "input_case": "poison_provenance",
+      "implementation": "polars-talib",
+      "indicator": "ema",
+      "execution": "eager",
+      "median_ms": 0.5851229943800718,
+      "min_ms": 0.4557969805318862,
+      "max_ms": 0.7786100031808019,
+      "samples_ms": [
+        0.7786100031808019,
+        0.4557969805318862,
+        0.5851229943800718,
+        0.49404898891225457,
+        0.6998000026214868
+      ]
+    },
+    {
+      "rows": 100000,
+      "input_case": "poison_provenance",
+      "implementation": "polars-talib",
+      "indicator": "ema",
+      "execution": "lazy",
+      "median_ms": 0.5871870089322329,
+      "min_ms": 0.4396860022097826,
+      "max_ms": 0.6938990263734013,
+      "samples_ms": [
+        0.6330430041998625,
+        0.6938990263734013,
+        0.4907730035483837,
+        0.4396860022097826,
+        0.5871870089322329
+      ]
+    },
+    {
+      "rows": 100000,
+      "input_case": "poison_provenance",
+      "implementation": "polars-talib",
+      "indicator": "rsi",
+      "execution": "eager",
+      "median_ms": 0.567057984881103,
+      "min_ms": 0.5167720082681626,
+      "max_ms": 0.704820005921647,
+      "samples_ms": [
+        0.5870359891559929,
+        0.567057984881103,
+        0.528534990735352,
+        0.5167720082681626,
+        0.704820005921647
+      ]
+    },
+    {
+      "rows": 100000,
+      "input_case": "poison_provenance",
+      "implementation": "polars-talib",
+      "indicator": "rsi",
+      "execution": "lazy",
+      "median_ms": 0.6028659990988672,
+      "min_ms": 0.565744994673878,
+      "max_ms": 0.7406880031339824,
+      "samples_ms": [
+        0.7406880031339824,
+        0.60558199766092,
+        0.565744994673878,
+        0.570383999729529,
+        0.6028659990988672
+      ]
+    },
+    {
+      "rows": 100000,
+      "input_case": "poison_null",
+      "implementation": "composer_alloc_polars",
+      "indicator": "ema",
+      "execution": "eager",
+      "median_ms": 2.165896992664784,
+      "min_ms": 2.1435949893202633,
+      "max_ms": 2.6442969974596053,
+      "samples_ms": [
+        2.526742988266051,
+        2.165896992664784,
+        2.1435949893202633,
+        2.152021013898775,
+        2.6442969974596053
+      ]
+    },
+    {
+      "rows": 100000,
+      "input_case": "poison_null",
+      "implementation": "composer_alloc_polars",
+      "indicator": "ema",
+      "execution": "lazy",
+      "median_ms": 2.355378004722297,
+      "min_ms": 2.298355015227571,
+      "max_ms": 2.5623160181567073,
+      "samples_ms": [
+        2.5329750205855817,
+        2.5623160181567073,
+        2.35423500998877,
+        2.298355015227571,
+        2.355378004722297
+      ]
+    },
+    {
+      "rows": 100000,
+      "input_case": "poison_null",
+      "implementation": "composer_alloc_polars",
+      "indicator": "rsi",
+      "execution": "eager",
+      "median_ms": 2.2219189850147814,
+      "min_ms": 2.1111729729454964,
+      "max_ms": 2.26830699830316,
+      "samples_ms": [
+        2.2219189850147814,
+        2.121006982633844,
+        2.2473329736385494,
+        2.26830699830316,
+        2.1111729729454964
+      ]
+    },
+    {
+      "rows": 100000,
+      "input_case": "poison_null",
+      "implementation": "composer_alloc_polars",
+      "indicator": "rsi",
+      "execution": "lazy",
+      "median_ms": 2.305944013642147,
+      "min_ms": 2.1972170216031373,
+      "max_ms": 2.5557230110280216,
+      "samples_ms": [
+        2.5557230110280216,
+        2.2356399858836085,
+        2.305944013642147,
+        2.5062440254259855,
+        2.1972170216031373
+      ]
+    },
+    {
+      "rows": 100000,
+      "input_case": "poison_null",
+      "implementation": "polars-talib",
+      "indicator": "ema",
+      "execution": "eager",
+      "median_ms": 0.6062929751351476,
+      "min_ms": 0.4470100102480501,
+      "max_ms": 0.6851830112282187,
+      "samples_ms": [
+        0.6062929751351476,
+        0.4470100102480501,
+        0.6851830112282187,
+        0.49263599794358015,
+        0.6272519822232425
+      ]
+    },
+    {
+      "rows": 100000,
+      "input_case": "poison_null",
+      "implementation": "polars-talib",
+      "indicator": "ema",
+      "execution": "lazy",
+      "median_ms": 0.5027749866712838,
+      "min_ms": 0.4302169836591929,
+      "max_ms": 0.5598849966190755,
+      "samples_ms": [
+        0.5598849966190755,
+        0.5027749866712838,
+        0.5417900101747364,
+        0.4302169836591929,
+        0.49068298540078104
+      ]
+    },
+    {
+      "rows": 100000,
+      "input_case": "poison_null",
+      "implementation": "polars-talib",
+      "indicator": "rsi",
+      "execution": "eager",
+      "median_ms": 0.5364399985410273,
+      "min_ms": 0.5155100079718977,
+      "max_ms": 0.5729190015699714,
+      "samples_ms": [
+        0.5364399985410273,
+        0.5729190015699714,
+        0.5409890145529062,
+        0.5155100079718977,
+        0.5177040002308786
+      ]
+    },
+    {
+      "rows": 100000,
+      "input_case": "poison_null",
+      "implementation": "polars-talib",
+      "indicator": "rsi",
+      "execution": "lazy",
+      "median_ms": 0.5807040142826736,
+      "min_ms": 0.5412989994511008,
+      "max_ms": 0.7509880233556032,
+      "samples_ms": [
+        0.7509880233556032,
+        0.5480819963850081,
+        0.673059985274449,
+        0.5807040142826736,
+        0.5412989994511008
+      ]
+    },
+    {
+      "rows": 100000,
+      "input_case": "poison_nan",
+      "implementation": "composer_alloc_polars",
+      "indicator": "ema",
+      "execution": "eager",
+      "median_ms": 2.1176959853619337,
+      "min_ms": 2.0863660029135644,
+      "max_ms": 2.404730999842286,
+      "samples_ms": [
+        2.0889709994662553,
+        2.1176959853619337,
+        2.0863660029135644,
+        2.3505019780714065,
+        2.404730999842286
+      ]
+    },
+    {
+      "rows": 100000,
+      "input_case": "poison_nan",
+      "implementation": "composer_alloc_polars",
+      "indicator": "ema",
+      "execution": "lazy",
+      "median_ms": 2.0797640027012676,
+      "min_ms": 2.0170549978502095,
+      "max_ms": 2.3252599930856377,
+      "samples_ms": [
+        2.0797640027012676,
+        2.1883900044485927,
+        2.0170549978502095,
+        2.033315977314487,
+        2.3252599930856377
+      ]
+    },
+    {
+      "rows": 100000,
+      "input_case": "poison_nan",
+      "implementation": "composer_alloc_polars",
+      "indicator": "rsi",
+      "execution": "eager",
+      "median_ms": 2.1977729920763522,
+      "min_ms": 2.0258510194253176,
+      "max_ms": 2.300924010341987,
+      "samples_ms": [
+        2.0258510194253176,
+        2.2822490136604756,
+        2.300924010341987,
+        2.1573709964286536,
+        2.1977729920763522
+      ]
+    },
+    {
+      "rows": 100000,
+      "input_case": "poison_nan",
+      "implementation": "composer_alloc_polars",
+      "indicator": "rsi",
+      "execution": "lazy",
+      "median_ms": 2.2823949984740466,
+      "min_ms": 2.0816879987251014,
+      "max_ms": 2.9522560071200132,
+      "samples_ms": [
+        2.0816879987251014,
+        2.3064340057317168,
+        2.9522560071200132,
+        2.2823949984740466,
+        2.1632379794027656
+      ]
+    },
+    {
+      "rows": 100000,
+      "input_case": "poison_nan",
+      "implementation": "polars-talib",
+      "indicator": "ema",
+      "execution": "eager",
+      "median_ms": 0.45867200242355466,
+      "min_ms": 0.39075297536328435,
+      "max_ms": 0.8936590165831149,
+      "samples_ms": [
+        0.45867200242355466,
+        0.39075297536328435,
+        0.8936590165831149,
+        0.4427510139066726,
+        0.5568690248765051
+      ]
+    },
+    {
+      "rows": 100000,
+      "input_case": "poison_nan",
+      "implementation": "polars-talib",
+      "indicator": "ema",
+      "execution": "lazy",
+      "median_ms": 0.47004400403238833,
+      "min_ms": 0.41963800322264433,
+      "max_ms": 0.7666669844184071,
+      "samples_ms": [
+        0.4412989947013557,
+        0.47193700447678566,
+        0.7666669844184071,
+        0.41963800322264433,
+        0.47004400403238833
+      ]
+    },
+    {
+      "rows": 100000,
+      "input_case": "poison_nan",
+      "implementation": "polars-talib",
+      "indicator": "rsi",
+      "execution": "eager",
+      "median_ms": 0.49368798499926925,
+      "min_ms": 0.4786200006492436,
+      "max_ms": 0.5331640131771564,
+      "samples_ms": [
+        0.5114429804962128,
+        0.49368798499926925,
+        0.5331640131771564,
+        0.4786200006492436,
+        0.4796719877049327
+      ]
+    },
+    {
+      "rows": 100000,
+      "input_case": "poison_nan",
+      "implementation": "polars-talib",
+      "indicator": "rsi",
+      "execution": "lazy",
+      "median_ms": 0.5432530015241355,
+      "min_ms": 0.5104510055389255,
+      "max_ms": 0.5917550006415695,
+      "samples_ms": [
+        0.5432530015241355,
+        0.5917550006415695,
+        0.5104510055389255,
+        0.5211910174693912,
+        0.5669380188919604
+      ]
+    },
+    {
+      "rows": 100000,
+      "input_case": "poison_inf",
+      "implementation": "composer_alloc_polars",
+      "indicator": "ema",
+      "execution": "eager",
+      "median_ms": 2.356640005018562,
+      "min_ms": 2.298355015227571,
+      "max_ms": 2.6555079966783524,
+      "samples_ms": [
+        2.356640005018562,
+        2.3509690072387457,
+        2.6555079966783524,
+        2.298355015227571,
+        2.5657829828560352
+      ]
+    },
+    {
+      "rows": 100000,
+      "input_case": "poison_inf",
+      "implementation": "composer_alloc_polars",
+      "indicator": "ema",
+      "execution": "lazy",
+      "median_ms": 2.511113998480141,
+      "min_ms": 2.304349996848032,
+      "max_ms": 2.7829110040329397,
+      "samples_ms": [
+        2.304349996848032,
+        2.423316997010261,
+        2.7829110040329397,
+        2.511113998480141,
+        2.6722050097305328
+      ]
+    },
+    {
+      "rows": 100000,
+      "input_case": "poison_inf",
+      "implementation": "composer_alloc_polars",
+      "indicator": "rsi",
+      "execution": "eager",
+      "median_ms": 2.46878300094977,
+      "min_ms": 2.283350011566654,
+      "max_ms": 2.6993869978468865,
+      "samples_ms": [
+        2.46878300094977,
+        2.350116992602125,
+        2.674132992979139,
+        2.6993869978468865,
+        2.283350011566654
+      ]
+    },
+    {
+      "rows": 100000,
+      "input_case": "poison_inf",
+      "implementation": "composer_alloc_polars",
+      "indicator": "rsi",
+      "execution": "lazy",
+      "median_ms": 2.5141890218947083,
+      "min_ms": 2.4781910178717226,
+      "max_ms": 3.995259990915656,
+      "samples_ms": [
+        2.509600977646187,
+        2.4781910178717226,
+        2.5141890218947083,
+        2.779546979581937,
+        3.995259990915656
+      ]
+    },
+    {
+      "rows": 100000,
+      "input_case": "poison_inf",
+      "implementation": "polars-talib",
+      "indicator": "ema",
+      "execution": "eager",
+      "median_ms": 0.572328019188717,
+      "min_ms": 0.4445149970706552,
+      "max_ms": 0.713636982254684,
+      "samples_ms": [
+        0.6061619787942618,
+        0.4457469913177192,
+        0.572328019188717,
+        0.4445149970706552,
+        0.713636982254684
+      ]
+    },
+    {
+      "rows": 100000,
+      "input_case": "poison_inf",
+      "implementation": "polars-talib",
+      "indicator": "ema",
+      "execution": "lazy",
+      "median_ms": 0.5002609977964312,
+      "min_ms": 0.4633610078599304,
+      "max_ms": 0.5494140204973519,
+      "samples_ms": [
+        0.5002609977964312,
+        0.4633610078599304,
+        0.4815059946849942,
+        0.5461779946926981,
+        0.5494140204973519
+      ]
+    },
+    {
+      "rows": 100000,
+      "input_case": "poison_inf",
+      "implementation": "polars-talib",
+      "indicator": "rsi",
+      "execution": "eager",
+      "median_ms": 0.5714469880331308,
+      "min_ms": 0.5381130031310022,
+      "max_ms": 0.5918750248383731,
+      "samples_ms": [
+        0.5381130031310022,
+        0.5918750248383731,
+        0.5714469880331308,
+        0.5854229966644198,
+        0.5503660067915916
+      ]
+    },
+    {
+      "rows": 100000,
+      "input_case": "poison_inf",
+      "implementation": "polars-talib",
+      "indicator": "rsi",
+      "execution": "lazy",
+      "median_ms": 0.5979670095257461,
+      "min_ms": 0.5619389994535595,
+      "max_ms": 0.9718580113258213,
+      "samples_ms": [
+        0.5733199941460043,
+        0.5619389994535595,
+        0.6477120041381568,
+        0.9718580113258213,
+        0.5979670095257461
+      ]
+    },
+    {
+      "rows": 1000000,
+      "input_case": "all_valid",
+      "implementation": "composer_alloc_polars",
+      "indicator": "ema",
+      "execution": "eager",
+      "median_ms": 20.074838015716523,
+      "min_ms": 19.01012400048785,
+      "max_ms": 22.756044985726476,
+      "samples_ms": [
+        19.01012400048785,
+        21.681471989722922,
+        22.756044985726476,
+        20.074838015716523,
+        19.900957006029785
+      ]
+    },
+    {
+      "rows": 1000000,
+      "input_case": "all_valid",
+      "implementation": "composer_alloc_polars",
+      "indicator": "ema",
+      "execution": "lazy",
+      "median_ms": 20.38459700997919,
+      "min_ms": 19.91017599357292,
+      "max_ms": 22.635745001025498,
+      "samples_ms": [
+        20.030112995300442,
+        20.575047994498163,
+        22.635745001025498,
+        20.38459700997919,
+        19.91017599357292
+      ]
+    },
+    {
+      "rows": 1000000,
+      "input_case": "all_valid",
+      "implementation": "composer_alloc_polars",
+      "indicator": "rsi",
+      "execution": "eager",
+      "median_ms": 24.360974988667294,
+      "min_ms": 23.303325986489654,
+      "max_ms": 26.13065898185596,
+      "samples_ms": [
+        24.368899990804493,
+        23.303325986489654,
+        26.13065898185596,
+        24.360974988667294,
+        24.105939985020086
+      ]
+    },
+    {
+      "rows": 1000000,
+      "input_case": "all_valid",
+      "implementation": "composer_alloc_polars",
+      "indicator": "rsi",
+      "execution": "lazy",
+      "median_ms": 24.55566599383019,
+      "min_ms": 23.82216101977974,
+      "max_ms": 25.202063989127055,
+      "samples_ms": [
+        23.82216101977974,
+        24.10830499138683,
+        25.202063989127055,
+        24.595981987658888,
+        24.55566599383019
+      ]
+    },
+    {
+      "rows": 1000000,
+      "input_case": "all_valid",
+      "implementation": "polars-talib",
+      "indicator": "ema",
+      "execution": "eager",
+      "median_ms": 11.79360700189136,
+      "min_ms": 11.472587008029222,
+      "max_ms": 12.897766020614654,
+      "samples_ms": [
+        11.79360700189136,
+        11.597635020734742,
+        12.595382024301216,
+        11.472587008029222,
+        12.897766020614654
+      ]
+    },
+    {
+      "rows": 1000000,
+      "input_case": "all_valid",
+      "implementation": "polars-talib",
+      "indicator": "ema",
+      "execution": "lazy",
+      "median_ms": 12.17699600965716,
+      "min_ms": 11.548731999937445,
+      "max_ms": 12.474351999117061,
+      "samples_ms": [
+        12.17699600965716,
+        12.136017990997061,
+        12.474351999117061,
+        11.548731999937445,
+        12.332771992078051
+      ]
+    },
+    {
+      "rows": 1000000,
+      "input_case": "all_valid",
+      "implementation": "polars-talib",
+      "indicator": "rsi",
+      "execution": "eager",
+      "median_ms": 12.989290000405163,
+      "min_ms": 12.877849017968401,
+      "max_ms": 13.68826802354306,
+      "samples_ms": [
+        13.320400001248345,
+        12.989290000405163,
+        12.877849017968401,
+        12.947350012836978,
+        13.68826802354306
+      ]
+    },
+    {
+      "rows": 1000000,
+      "input_case": "all_valid",
+      "implementation": "polars-talib",
+      "indicator": "rsi",
+      "execution": "lazy",
+      "median_ms": 13.122782984282821,
+      "min_ms": 12.826379999751225,
+      "max_ms": 13.381936005316675,
+      "samples_ms": [
+        12.875754007836804,
+        12.826379999751225,
+        13.122782984282821,
+        13.273229997139424,
+        13.381936005316675
+      ]
+    },
+    {
+      "rows": 1000000,
+      "input_case": "prefix_provenance",
+      "implementation": "composer_alloc_polars",
+      "indicator": "ema",
+      "execution": "eager",
+      "median_ms": 20.404724986292422,
+      "min_ms": 20.252205984434113,
+      "max_ms": 21.972104004817083,
+      "samples_ms": [
+        21.972104004817083,
+        20.79092900385149,
+        20.404724986292422,
+        20.391851023305207,
+        20.252205984434113
+      ]
+    },
+    {
+      "rows": 1000000,
+      "input_case": "prefix_provenance",
+      "implementation": "composer_alloc_polars",
+      "indicator": "ema",
+      "execution": "lazy",
+      "median_ms": 20.25792599306442,
+      "min_ms": 19.64954999857582,
+      "max_ms": 20.86485901963897,
+      "samples_ms": [
+        20.86485901963897,
+        20.13684599660337,
+        20.852285000728443,
+        20.25792599306442,
+        19.64954999857582
+      ]
+    },
+    {
+      "rows": 1000000,
+      "input_case": "prefix_provenance",
+      "implementation": "composer_alloc_polars",
+      "indicator": "rsi",
+      "execution": "eager",
+      "median_ms": 23.39280498563312,
+      "min_ms": 22.63786000548862,
+      "max_ms": 24.371445004362613,
+      "samples_ms": [
+        24.371445004362613,
+        23.39280498563312,
+        24.224325985414907,
+        22.941297007491812,
+        22.63786000548862
+      ]
+    },
+    {
+      "rows": 1000000,
+      "input_case": "prefix_provenance",
+      "implementation": "composer_alloc_polars",
+      "indicator": "rsi",
+      "execution": "lazy",
+      "median_ms": 23.225206008646637,
+      "min_ms": 21.992923982907087,
+      "max_ms": 25.830368016613647,
+      "samples_ms": [
+        25.830368016613647,
+        22.733570978743955,
+        24.80781401391141,
+        21.992923982907087,
+        23.225206008646637
+      ]
+    },
+    {
+      "rows": 1000000,
+      "input_case": "prefix_provenance",
+      "implementation": "polars-talib",
+      "indicator": "ema",
+      "execution": "eager",
+      "median_ms": 22.125646006315947,
+      "min_ms": 21.158226998522878,
+      "max_ms": 23.376002995064482,
+      "samples_ms": [
+        22.125646006315947,
+        21.158226998522878,
+        23.376002995064482,
+        22.245573985856026,
+        22.047738020773977
+      ]
+    },
+    {
+      "rows": 1000000,
+      "input_case": "prefix_provenance",
+      "implementation": "polars-talib",
+      "indicator": "ema",
+      "execution": "lazy",
+      "median_ms": 21.32274000905454,
+      "min_ms": 20.736484992085025,
+      "max_ms": 25.73347499128431,
+      "samples_ms": [
+        21.773796994239092,
+        25.73347499128431,
+        21.32274000905454,
+        20.80927399219945,
+        20.736484992085025
+      ]
+    },
+    {
+      "rows": 1000000,
+      "input_case": "prefix_provenance",
+      "implementation": "polars-talib",
+      "indicator": "rsi",
+      "execution": "eager",
+      "median_ms": 21.91117897746153,
+      "min_ms": 21.558898995863274,
+      "max_ms": 29.25384498666972,
+      "samples_ms": [
+        24.71870498266071,
+        29.25384498666972,
+        21.91117897746153,
+        21.810396981891245,
+        21.558898995863274
+      ]
+    },
+    {
+      "rows": 1000000,
+      "input_case": "prefix_provenance",
+      "implementation": "polars-talib",
+      "indicator": "rsi",
+      "execution": "lazy",
+      "median_ms": 22.339561983244494,
+      "min_ms": 22.09271301398985,
+      "max_ms": 26.443031994858757,
+      "samples_ms": [
+        26.443031994858757,
+        22.77167499414645,
+        22.339561983244494,
+        22.32607698533684,
+        22.09271301398985
+      ]
+    },
+    {
+      "rows": 1000000,
+      "input_case": "poison_provenance",
+      "implementation": "composer_alloc_polars",
+      "indicator": "ema",
+      "execution": "eager",
+      "median_ms": 17.395193979609758,
+      "min_ms": 16.88542598276399,
+      "max_ms": 18.12174599035643,
+      "samples_ms": [
+        16.88542598276399,
+        18.076129024848342,
+        18.12174599035643,
+        17.395193979609758,
+        17.23033099551685
+      ]
+    },
+    {
+      "rows": 1000000,
+      "input_case": "poison_provenance",
+      "implementation": "composer_alloc_polars",
+      "indicator": "ema",
+      "execution": "lazy",
+      "median_ms": 17.17285200720653,
+      "min_ms": 17.041673010680825,
+      "max_ms": 18.147995986510068,
+      "samples_ms": [
+        17.17285200720653,
+        17.77010699152015,
+        18.147995986510068,
+        17.041673010680825,
+        17.096256982767954
+      ]
+    },
+    {
+      "rows": 1000000,
+      "input_case": "poison_provenance",
+      "implementation": "composer_alloc_polars",
+      "indicator": "rsi",
+      "execution": "eager",
+      "median_ms": 17.676178977126256,
+      "min_ms": 17.53623300464824,
+      "max_ms": 18.354397994698957,
+      "samples_ms": [
+        18.021836003754288,
+        18.354397994698957,
+        17.676178977126256,
+        17.53623300464824,
+        17.661199992289767
+      ]
+    },
+    {
+      "rows": 1000000,
+      "input_case": "poison_provenance",
+      "implementation": "composer_alloc_polars",
+      "indicator": "rsi",
+      "execution": "lazy",
+      "median_ms": 18.03446898702532,
+      "min_ms": 17.45987799949944,
+      "max_ms": 20.426527014933527,
+      "samples_ms": [
+        20.426527014933527,
+        19.240673020249233,
+        17.902549006976187,
+        17.45987799949944,
+        18.03446898702532
+      ]
+    },
+    {
+      "rows": 1000000,
+      "input_case": "poison_provenance",
+      "implementation": "polars-talib",
+      "indicator": "ema",
+      "execution": "eager",
+      "median_ms": 23.475932015571743,
+      "min_ms": 21.69337501982227,
+      "max_ms": 27.591875987127423,
+      "samples_ms": [
+        23.620287014637142,
+        22.899618023075163,
+        21.69337501982227,
+        23.475932015571743,
+        27.591875987127423
+      ]
+    },
+    {
+      "rows": 1000000,
+      "input_case": "poison_provenance",
+      "implementation": "polars-talib",
+      "indicator": "ema",
+      "execution": "lazy",
+      "median_ms": 23.393205978209153,
+      "min_ms": 22.64211801229976,
+      "max_ms": 23.8865630235523,
+      "samples_ms": [
+        23.393205978209153,
+        23.788316000718623,
+        22.64211801229976,
+        22.86585298134014,
+        23.8865630235523
+      ]
+    },
+    {
+      "rows": 1000000,
+      "input_case": "poison_provenance",
+      "implementation": "polars-talib",
+      "indicator": "rsi",
+      "execution": "eager",
+      "median_ms": 23.803705989848822,
+      "min_ms": 23.32962502259761,
+      "max_ms": 24.308544991072267,
+      "samples_ms": [
+        23.803705989848822,
+        24.308544991072267,
+        23.84663702105172,
+        23.32962502259761,
+        23.709385975962505
+      ]
+    },
+    {
+      "rows": 1000000,
+      "input_case": "poison_provenance",
+      "implementation": "polars-talib",
+      "indicator": "rsi",
+      "execution": "lazy",
+      "median_ms": 23.483677010517567,
+      "min_ms": 23.072385985869914,
+      "max_ms": 25.677727011498064,
+      "samples_ms": [
+        23.235286003910005,
+        23.483677010517567,
+        25.677727011498064,
+        25.421911996090785,
+        23.072385985869914
+      ]
+    },
+    {
+      "rows": 1000000,
+      "input_case": "poison_null",
+      "implementation": "composer_alloc_polars",
+      "indicator": "ema",
+      "execution": "eager",
+      "median_ms": 18.229370994959027,
+      "min_ms": 17.216003994690254,
+      "max_ms": 19.086137996055186,
+      "samples_ms": [
+        17.216003994690254,
+        19.086137996055186,
+        18.154026998672634,
+        18.229370994959027,
+        18.392489990219474
+      ]
+    },
+    {
+      "rows": 1000000,
+      "input_case": "poison_null",
+      "implementation": "composer_alloc_polars",
+      "indicator": "ema",
+      "execution": "lazy",
+      "median_ms": 18.218289013020694,
+      "min_ms": 17.69707800121978,
+      "max_ms": 18.661451002117246,
+      "samples_ms": [
+        17.69707800121978,
+        18.273994995979592,
+        18.218289013020694,
+        17.962001991691068,
+        18.661451002117246
+      ]
+    },
+    {
+      "rows": 1000000,
+      "input_case": "poison_null",
+      "implementation": "composer_alloc_polars",
+      "indicator": "rsi",
+      "execution": "eager",
+      "median_ms": 18.551481975009665,
+      "min_ms": 17.697609000606462,
+      "max_ms": 18.597059010062367,
+      "samples_ms": [
+        18.57652098988183,
+        18.380797002464533,
+        18.551481975009665,
+        17.697609000606462,
+        18.597059010062367
+      ]
+    },
+    {
+      "rows": 1000000,
+      "input_case": "poison_null",
+      "implementation": "composer_alloc_polars",
+      "indicator": "rsi",
+      "execution": "lazy",
+      "median_ms": 18.21597499656491,
+      "min_ms": 17.39631700911559,
+      "max_ms": 19.101939018582925,
+      "samples_ms": [
+        18.990417011082172,
+        17.39631700911559,
+        19.101939018582925,
+        17.590325005585328,
+        18.21597499656491
+      ]
+    },
+    {
+      "rows": 1000000,
+      "input_case": "poison_null",
+      "implementation": "polars-talib",
+      "indicator": "ema",
+      "execution": "eager",
+      "median_ms": 22.219934995518997,
+      "min_ms": 20.214824005961418,
+      "max_ms": 25.320379005279392,
+      "samples_ms": [
+        23.108604014851153,
+        21.330445015337318,
+        22.219934995518997,
+        20.214824005961418,
+        25.320379005279392
+      ]
+    },
+    {
+      "rows": 1000000,
+      "input_case": "poison_null",
+      "implementation": "polars-talib",
+      "indicator": "ema",
+      "execution": "lazy",
+      "median_ms": 21.407470980193466,
+      "min_ms": 21.118621982168406,
+      "max_ms": 23.048650997225195,
+      "samples_ms": [
+        22.395203995984048,
+        21.118621982168406,
+        21.407470980193466,
+        21.20149999973364,
+        23.048650997225195
+      ]
+    },
+    {
+      "rows": 1000000,
+      "input_case": "poison_null",
+      "implementation": "polars-talib",
+      "indicator": "rsi",
+      "execution": "eager",
+      "median_ms": 22.298169002169743,
+      "min_ms": 21.761693991720676,
+      "max_ms": 26.360635994933546,
+      "samples_ms": [
+        22.298169002169743,
+        21.761693991720676,
+        21.926437999354675,
+        25.003625982208177,
+        26.360635994933546
+      ]
+    },
+    {
+      "rows": 1000000,
+      "input_case": "poison_null",
+      "implementation": "polars-talib",
+      "indicator": "rsi",
+      "execution": "lazy",
+      "median_ms": 21.724304009694606,
+      "min_ms": 21.613362012431026,
+      "max_ms": 23.286281997570768,
+      "samples_ms": [
+        22.984077979344875,
+        21.710818022256717,
+        21.724304009694606,
+        21.613362012431026,
+        23.286281997570768
+      ]
+    },
+    {
+      "rows": 1000000,
+      "input_case": "poison_nan",
+      "implementation": "composer_alloc_polars",
+      "indicator": "ema",
+      "execution": "eager",
+      "median_ms": 17.173232015920803,
+      "min_ms": 16.97071798844263,
+      "max_ms": 17.366971005685627,
+      "samples_ms": [
+        17.09288900019601,
+        17.366971005685627,
+        17.173232015920803,
+        16.97071798844263,
+        17.227235017344356
+      ]
+    },
+    {
+      "rows": 1000000,
+      "input_case": "poison_nan",
+      "implementation": "composer_alloc_polars",
+      "indicator": "ema",
+      "execution": "lazy",
+      "median_ms": 16.929559991694987,
+      "min_ms": 16.803700011223555,
+      "max_ms": 17.693522007903084,
+      "samples_ms": [
+        16.929559991694987,
+        17.693522007903084,
+        16.803700011223555,
+        16.813558991998434,
+        17.351652000797912
+      ]
+    },
+    {
+      "rows": 1000000,
+      "input_case": "poison_nan",
+      "implementation": "composer_alloc_polars",
+      "indicator": "rsi",
+      "execution": "eager",
+      "median_ms": 17.670086992438883,
+      "min_ms": 16.710723022697493,
+      "max_ms": 17.718057992169634,
+      "samples_ms": [
+        17.670086992438883,
+        17.718057992169634,
+        17.307917994912714,
+        16.710723022697493,
+        17.70388099248521
+      ]
+    },
+    {
+      "rows": 1000000,
+      "input_case": "poison_nan",
+      "implementation": "composer_alloc_polars",
+      "indicator": "rsi",
+      "execution": "lazy",
+      "median_ms": 17.56706100422889,
+      "min_ms": 17.477179993875325,
+      "max_ms": 18.078344000969082,
+      "samples_ms": [
+        17.512988997623324,
+        17.734950000885874,
+        17.56706100422889,
+        17.477179993875325,
+        18.078344000969082
+      ]
+    },
+    {
+      "rows": 1000000,
+      "input_case": "poison_nan",
+      "implementation": "polars-talib",
+      "indicator": "ema",
+      "execution": "eager",
+      "median_ms": 11.89667300786823,
+      "min_ms": 11.07497198972851,
+      "max_ms": 12.164451996795833,
+      "samples_ms": [
+        12.146066001150757,
+        11.89667300786823,
+        11.862487997859716,
+        11.07497198972851,
+        12.164451996795833
+      ]
+    },
+    {
+      "rows": 1000000,
+      "input_case": "poison_nan",
+      "implementation": "polars-talib",
+      "indicator": "ema",
+      "execution": "lazy",
+      "median_ms": 11.61822400172241,
+      "min_ms": 10.90035800007172,
+      "max_ms": 12.058741005603224,
+      "samples_ms": [
+        12.058741005603224,
+        11.997504014289007,
+        11.61822400172241,
+        10.90035800007172,
+        11.450544989202172
+      ]
+    },
+    {
+      "rows": 1000000,
+      "input_case": "poison_nan",
+      "implementation": "polars-talib",
+      "indicator": "rsi",
+      "execution": "eager",
+      "median_ms": 12.642821006011218,
+      "min_ms": 12.217021983815357,
+      "max_ms": 12.87230700836517,
+      "samples_ms": [
+        12.82120100222528,
+        12.642821006011218,
+        12.87230700836517,
+        12.288919009733945,
+        12.217021983815357
+      ]
+    },
+    {
+      "rows": 1000000,
+      "input_case": "poison_nan",
+      "implementation": "polars-talib",
+      "indicator": "rsi",
+      "execution": "lazy",
+      "median_ms": 12.242950004292652,
+      "min_ms": 12.11562001844868,
+      "max_ms": 13.128524005878717,
+      "samples_ms": [
+        13.128524005878717,
+        12.856346991611645,
+        12.242950004292652,
+        12.11562001844868,
+        12.224256002809852
+      ]
+    },
+    {
+      "rows": 1000000,
+      "input_case": "poison_inf",
+      "implementation": "composer_alloc_polars",
+      "indicator": "ema",
+      "execution": "eager",
+      "median_ms": 17.62206500279717,
+      "min_ms": 17.41147501161322,
+      "max_ms": 20.890006999252364,
+      "samples_ms": [
+        17.634344985708594,
+        20.890006999252364,
+        17.62206500279717,
+        17.41147501161322,
+        17.552378005348146
+      ]
+    },
+    {
+      "rows": 1000000,
+      "input_case": "poison_inf",
+      "implementation": "composer_alloc_polars",
+      "indicator": "ema",
+      "execution": "lazy",
+      "median_ms": 17.43456901749596,
+      "min_ms": 17.18624701607041,
+      "max_ms": 18.115538987331092,
+      "samples_ms": [
+        18.115538987331092,
+        17.37151900306344,
+        17.43456901749596,
+        17.18624701607041,
+        17.577735998202115
+      ]
+    },
+    {
+      "rows": 1000000,
+      "input_case": "poison_inf",
+      "implementation": "composer_alloc_polars",
+      "indicator": "rsi",
+      "execution": "eager",
+      "median_ms": 17.822066001826897,
+      "min_ms": 17.127786006312817,
+      "max_ms": 26.83575899573043,
+      "samples_ms": [
+        19.7132810135372,
+        17.531983990920708,
+        17.822066001826897,
+        17.127786006312817,
+        26.83575899573043
+      ]
+    },
+    {
+      "rows": 1000000,
+      "input_case": "poison_inf",
+      "implementation": "composer_alloc_polars",
+      "indicator": "rsi",
+      "execution": "lazy",
+      "median_ms": 18.253406014991924,
+      "min_ms": 16.990014002658427,
+      "max_ms": 19.997401017462835,
+      "samples_ms": [
+        18.253406014991924,
+        17.123016994446516,
+        18.450921023031697,
+        16.990014002658427,
+        19.997401017462835
+      ]
+    },
+    {
+      "rows": 1000000,
+      "input_case": "poison_inf",
+      "implementation": "polars-talib",
+      "indicator": "ema",
+      "execution": "eager",
+      "median_ms": 12.355304002994671,
+      "min_ms": 11.133623018395156,
+      "max_ms": 13.068810978438705,
+      "samples_ms": [
+        12.355304002994671,
+        11.535446014022455,
+        12.386994989356026,
+        11.133623018395156,
+        13.068810978438705
+      ]
+    },
+    {
+      "rows": 1000000,
+      "input_case": "poison_inf",
+      "implementation": "polars-talib",
+      "indicator": "ema",
+      "execution": "lazy",
+      "median_ms": 11.957128008361906,
+      "min_ms": 11.247068003285676,
+      "max_ms": 12.805120000848547,
+      "samples_ms": [
+        12.107964983442798,
+        11.404977994970977,
+        11.957128008361906,
+        11.247068003285676,
+        12.805120000848547
+      ]
+    },
+    {
+      "rows": 1000000,
+      "input_case": "poison_inf",
+      "implementation": "polars-talib",
+      "indicator": "rsi",
+      "execution": "eager",
+      "median_ms": 12.505529972258955,
+      "min_ms": 11.854693002533168,
+      "max_ms": 14.172839000821114,
+      "samples_ms": [
+        12.786014005541801,
+        12.505529972258955,
+        11.984109005425125,
+        11.854693002533168,
+        14.172839000821114
+      ]
+    },
+    {
+      "rows": 1000000,
+      "input_case": "poison_inf",
+      "implementation": "polars-talib",
+      "indicator": "rsi",
+      "execution": "lazy",
+      "median_ms": 12.396733014611527,
+      "min_ms": 12.04224000684917,
+      "max_ms": 13.871567003661767,
+      "samples_ms": [
+        12.396733014611527,
+        12.425386987160891,
+        12.04224000684917,
+        12.20969800488092,
+        13.871567003661767
+      ]
+    }
+  ]
+}
